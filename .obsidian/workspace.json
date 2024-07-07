@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hello Obsidian.md",
+                "file": "ISA.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hello Obsidian.md",
+                "file": "ISA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hello Obsidian.md",
+                "file": "ISA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hello Obsidian.md"
+                "file": "ISA.md"
               }
             }
           }
@@ -148,6 +148,6 @@
   },
   "active": "6be40e6e32344662",
   "lastOpenFiles": [
-    "Hello Obsidian.md"
+    "ISA.md"
   ]
 }
