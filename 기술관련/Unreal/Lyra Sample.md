@@ -5,7 +5,6 @@
        UGameFeaturesSubsystem::Get().LoadAndActivateGameFeaturePlugin(PluginURL, FGameFeaturePluginLoadComplete::CreateUObject(this, &ThisClass::OnGameFeaturePluginLoadComplete));
 
 
-
-
+AssetManager 부분 확인해야함
 
 
