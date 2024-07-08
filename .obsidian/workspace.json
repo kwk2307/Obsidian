@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md",
+                "file": "기술관련/Unreal/Lyra Sample.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md",
+                "file": "기술관련/Unreal/Lyra Sample.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md",
+                "file": "기술관련/Unreal/Lyra Sample.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md"
+                "file": "기술관련/Unreal/Lyra Sample.md"
               }
             }
           }
@@ -148,9 +148,9 @@
   },
   "active": "c8c3dc7d94d9f3d9",
   "lastOpenFiles": [
+    "ViveStudios/업무일지/2024-07-08.md",
     "2024-07-08.md",
     "기술관련/Unreal/Lyra Sample.md",
-    "ViveStudios/업무일지/2024-07-08.md",
     "기술관련/Unreal/Modular Features Extra Actions.md",
     "기술관련/Unreal/GameFeatures.md",
     "기술관련/Unreal/GameAblilitySystem.md",
