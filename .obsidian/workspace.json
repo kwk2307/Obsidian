@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md",
+                "file": "기술관련/포인트 클라우드 정합.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md",
+                "file": "기술관련/포인트 클라우드 정합.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md",
+                "file": "기술관련/포인트 클라우드 정합.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md"
+                "file": "기술관련/포인트 클라우드 정합.md"
               }
             }
           }
@@ -173,8 +173,10 @@
   },
   "active": "f1f09989a7fa1712",
   "lastOpenFiles": [
-    "ViveStudios/프로젝트/KAI POS2.md",
     "ViveStudios/업무일지/2024-07-08.md",
+    "기술관련/포인트 클라우드 정합.md",
+    "기술관련",
+    "ViveStudios/프로젝트/KAI POS2.md",
     "2024-07-08.md",
     "ViveStudios/프로젝트",
     "ViveStudios/업무일지",
