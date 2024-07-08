@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/GAS.md",
+                "file": "ViveStudios/업무일지/2024-07-08.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/GAS.md",
+                "file": "ViveStudios/업무일지/2024-07-08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/GAS.md",
+                "file": "ViveStudios/업무일지/2024-07-08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/GAS.md"
+                "file": "ViveStudios/업무일지/2024-07-08.md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "c8c3dc7d94d9f3d9",
   "lastOpenFiles": [
-    "ViveStudios/업무일지/2024-07-08.md",
+    "기술관련/Unreal/Lyra Sample.md",
     "기술관련/Unreal/GAS.md",
     "기술관련/Unreal/GameFeatures.md",
-    "기술관련/Unreal/Lyra Sample.md",
+    "ViveStudios/업무일지/2024-07-08.md",
     "기술관련/Unreal/Modular Features Extra Actions.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
     "기술관련/포인트 클라우드/Open3D.md",
