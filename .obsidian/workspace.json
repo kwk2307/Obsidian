@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md",
+                "file": "기술관련/Unreal/Lyra Sample.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md",
+                "file": "기술관련/Unreal/Lyra Sample.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md",
+                "file": "기술관련/Unreal/Lyra Sample.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-08.md"
+                "file": "기술관련/Unreal/Lyra Sample.md"
               }
             }
           }
@@ -159,8 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6b156b7346e0692",
+  "active": "8edd81cebeaa65d3",
   "lastOpenFiles": [
+    "기술관련/Unreal/모듈형 게임플레이.md",
+    "ViveStudios/업무일지/2024-07-09.md",
+    "Untitled.md",
+    "Images/Lyra Sample/Pasted image 20240709151006.png",
+    "Images/Lyra Sample/Pasted image 20240709165608.png",
+    "Images/Lyra Sample/Pasted image 20240709150022.png",
+    "Images/Lyra Sample",
+    "Images",
+    "투자관련/ISA.md",
     "투자관련/투자 계획.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
     "기술관련/포인트 클라우드/Open3D.md",
@@ -177,7 +186,6 @@
     "ViveStudios",
     "투자관련/해외 고배당주.md",
     "투자관련/국내 ETF.md",
-    "투자관련/ISA.md",
     "투자관련"
   ]
 }
