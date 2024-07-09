@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-09.md",
+                "file": "기술관련/Unreal/모듈형 게임플레이.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-09.md",
+                "file": "기술관련/Unreal/모듈형 게임플레이.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-09.md",
+                "file": "기술관련/Unreal/모듈형 게임플레이.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-09.md"
+                "file": "기술관련/Unreal/모듈형 게임플레이.md"
               }
             }
           }
@@ -148,9 +148,10 @@
   },
   "active": "c8c3dc7d94d9f3d9",
   "lastOpenFiles": [
+    "ViveStudios/업무일지/2024-07-09.md",
+    "기술관련/Unreal/모듈형 게임플레이.md",
     "기술관련/Unreal/GameFeatures.md",
     "기술관련/Unreal/모듈형 프로그래밍.md",
-    "ViveStudios/업무일지/2024-07-09.md",
     "ViveStudios/업무일지/2024-07-08.md",
     "기술관련/Unreal/Lyra Sample.md",
     "기술관련/Unreal/GAS.md",
