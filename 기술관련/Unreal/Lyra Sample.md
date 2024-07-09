@@ -10,7 +10,7 @@ LyraGameMode의 InitGame 에서 LyraGameMode의 HandleMatchAssignmentIfNotExpect
 LyraGameMode 의 OnMatchAssignmentGiven 함수를 통해LyraExperienceManagerComponent의  SetCurrentExperience 함수를 호출함 
 ![[Pasted image 20240709165608.png]]
 
-**LyraExperienceManagerComponent** << 여기서 Experience 처리
+
        UGameFeaturesSubsystem::Get().LoadAndActivateGameFeaturePlugin(PluginURL, FGameFeaturePluginLoadComplete::CreateUObject(this, &ThisClass::OnGameFeaturePluginLoadComplete));
 
 AssetManager 부분 확인해야함
