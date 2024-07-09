@@ -8,7 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c8c3dc7d94d9f3d9",
+            "id": "6be40e6e32344662",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "투자관련/ISA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8edd81cebeaa65d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "분리해놓은",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,25 +159,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8c3dc7d94d9f3d9",
+  "active": "f6b156b7346e0692",
   "lastOpenFiles": [
+    "투자관련/투자 계획.md",
+    "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
+    "기술관련/포인트 클라우드/Open3D.md",
     "기술관련/Unreal/Lyra Sample.md",
     "기술관련/Unreal/GAS.md",
     "기술관련/Unreal/GameFeatures.md",
-    "ViveStudios/업무일지/2024-07-08.md",
-    "기술관련/Unreal/Modular Features Extra Actions.md",
-    "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
-    "기술관련/포인트 클라우드/Open3D.md",
     "기술관련/포인트 클라우드",
-    "2024-07-08.md",
-    "Untitled.md",
     "기술관련/Unreal",
     "기술관련",
     "ViveStudios/프로젝트/KAI POS2.md",
+    "ViveStudios/업무일지/2024-07-08.md",
     "ViveStudios/프로젝트",
     "ViveStudios/업무일지",
     "ViveStudios",
-    "투자관련/투자 계획.md",
     "투자관련/해외 고배당주.md",
     "투자관련/국내 ETF.md",
     "투자관련/ISA.md",
