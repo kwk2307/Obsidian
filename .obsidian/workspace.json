@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/Lyra Sample.md",
+                "file": "기술관련/Unreal/Lyra Starter Game.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Extention.md",
+                "file": "기술관련/Unreal/Lyra Starter Game.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Extention.md",
+                "file": "기술관련/Unreal/Lyra Starter Game.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Extention.md",
+                "file": "기술관련/Unreal/Lyra Starter Game.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Extention.md"
+                "file": "기술관련/Unreal/Lyra Starter Game.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "6e0bbe01fcc43fd3",
   "lastOpenFiles": [
-    "기술관련/Unreal/Lyra Sample.md",
-    "Extention.md",
+    "기술관련/Unreal/UIExtension.md",
+    "기술관련/Unreal/Lyra Starter Game.md",
     "기술관련/Unreal/CommonUI.md",
     "ViveStudios/업무일지/2024-07-10.md",
     "Images/Lyra Sample",
