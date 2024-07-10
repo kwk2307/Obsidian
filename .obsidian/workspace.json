@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "9fd5a6bda92e6803",
+        "id": "eacbf49d0d819cf2",
         "type": "tabs",
         "children": [
           {
-            "id": "6be40e6e32344662",
+            "id": "aa2a80374d1e34b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "투자관련/ISA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8edd81cebeaa65d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "기술관련/Unreal/Lyra Sample.md",
+                "file": "ViveStudios/업무일지/2024-07-10.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "분리해놓은",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Lyra Sample.md",
+                "file": "ViveStudios/업무일지/2024-07-10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Lyra Sample.md",
+                "file": "ViveStudios/업무일지/2024-07-10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Lyra Sample.md"
+                "file": "ViveStudios/업무일지/2024-07-10.md"
               }
             }
           }
@@ -159,33 +146,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8edd81cebeaa65d3",
+  "active": "aa2a80374d1e34b0",
   "lastOpenFiles": [
-    "기술관련/Unreal/모듈형 게임플레이.md",
+    "기술관련/Unreal/Lyra Sample.md",
+    "ViveStudios/업무일지/2024-07-10.md",
+    "Images/Lyra Sample",
+    "Images/Lyra Sample/Pasted image 20240709165608.png",
     "ViveStudios/업무일지/2024-07-09.md",
     "Untitled.md",
-    "Images/Lyra Sample/Pasted image 20240709151006.png",
-    "Images/Lyra Sample/Pasted image 20240709165608.png",
     "Images/Lyra Sample/Pasted image 20240709150022.png",
-    "Images/Lyra Sample",
+    "Images/Lyra Sample/Pasted image 20240709151006.png",
     "Images",
-    "투자관련/ISA.md",
-    "투자관련/투자 계획.md",
-    "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
-    "기술관련/포인트 클라우드/Open3D.md",
-    "기술관련/Unreal/Lyra Sample.md",
-    "기술관련/Unreal/GAS.md",
+    "기술관련/Unreal/모듈형 게임플레이.md",
     "기술관련/Unreal/GameFeatures.md",
+    "기술관련/Unreal/모듈형 프로그래밍.md",
+    "ViveStudios/업무일지/2024-07-08.md",
+    "기술관련/Unreal/GAS.md",
+    "기술관련/포인트 클라우드/Open3D.md",
+    "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
+    "기술관련/Unreal/Modular Features Extra Actions.md",
     "기술관련/포인트 클라우드",
+    "2024-07-08.md",
     "기술관련/Unreal",
     "기술관련",
     "ViveStudios/프로젝트/KAI POS2.md",
-    "ViveStudios/업무일지/2024-07-08.md",
     "ViveStudios/프로젝트",
     "ViveStudios/업무일지",
     "ViveStudios",
+    "투자관련/투자 계획.md",
     "투자관련/해외 고배당주.md",
     "투자관련/국내 ETF.md",
+    "투자관련/ISA.md",
     "투자관련"
   ]
 }
