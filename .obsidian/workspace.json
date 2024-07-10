@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "67e44a669fb4ece5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "기술관련/Unreal/CommonGame.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/CommonUI.md",
+                "file": "기술관련/Unreal/CommonGame.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/CommonUI.md",
+                "file": "기술관련/Unreal/CommonGame.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/CommonUI.md"
+                "file": "기술관련/Unreal/CommonGame.md"
               }
             }
           }
@@ -183,16 +195,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bda28ee455c3acfd",
+  "active": "67e44a669fb4ece5",
   "lastOpenFiles": [
-    "기술관련/Unreal/UIExtension.md",
     "기술관련/Unreal/CommonUI.md",
+    "기술관련/Unreal/CommonGame.md",
+    "기술관련/Unreal/UIExtension.md",
     "ViveStudios/업무일지/2024-07-10.md",
     "기술관련/Unreal/Lyra Starter Game.md",
     "ViveStudios/업무일지/2024-07-08.md",
     "ViveStudios/업무일지/2024-07-09.md",
     "기술관련/GStreamer.md",
-    "Untitled.md",
     "기술관련/ZED SDK.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
     "기술관련/GStreamer",
