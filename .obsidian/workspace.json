@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6ca8136269dd7248",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "기술관련/Unreal/Asset Manager.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md",
+                "file": "기술관련/Unreal/Asset Manager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md",
+                "file": "기술관련/Unreal/Asset Manager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md"
+                "file": "기술관련/Unreal/Asset Manager.md"
               }
             }
           }
@@ -159,13 +171,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6e0bbe01fcc43fd3",
+  "active": "f6b156b7346e0692",
   "lastOpenFiles": [
+    "기술관련/Unreal/Lyra Starter Game.md",
+    "기술관련/Unreal/Asset Manager.md",
     "기술관련/Unreal/CommonUI.md",
     "기술관련/Unreal/Gameplay Ability System.md",
     "기술관련/Unreal/GameFeatures.md",
     "기술관련/Unreal/UIExtension.md",
-    "기술관련/Unreal/Lyra Starter Game.md",
     "ViveStudios/업무일지/2024-07-10.md",
     "Images/Lyra Sample",
     "Images/Lyra Sample/Pasted image 20240709165608.png",
