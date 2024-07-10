@@ -1,6 +1,8 @@
-https://lemonyun.tistory.com/147 <<참고
-
-- 전반적인 흐름
+참고자료
+- https://lemonyun.tistory.com/147 
+- https://velog.io/@1000/Lyra-%EB%9D%BC%EC%9D%B4%EB%9D%BC-%EC%8A%A4%ED%83%80%ED%84%B0-%EA%B2%8C%EC%9E%84-%EA%B0%9C%EC%9A%94-%EC%9A%94%EC%95%BD 
+- 
+**전반적인 흐름**
 
 GameState의 생성자에서 AbilitySystemComponent 과 ExperienceManagerComponent를 초기화 해줌 
 ![[Pasted image 20240709150022.png]]
