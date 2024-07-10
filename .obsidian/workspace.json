@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "ViveStudios/업무일지/2024-07-10.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "ViveStudios/업무일지/2024-07-10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "ViveStudios/업무일지/2024-07-10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "ViveStudios/업무일지/2024-07-10.md"
               }
             }
           }
@@ -183,9 +183,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6b156b7346e0692",
+  "active": "bda28ee455c3acfd",
   "lastOpenFiles": [
+    "ViveStudios/업무일지/2024-07-08.md",
+    "ViveStudios/업무일지/2024-07-09.md",
+    "ViveStudios/업무일지/2024-07-10.md",
     "기술관련/GStreamer.md",
+    "Untitled.md",
     "기술관련/ZED SDK.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
     "기술관련/GStreamer",
@@ -197,16 +201,12 @@
     "기술관련/Unreal/Gameplay Ability System.md",
     "기술관련/Unreal/Lyra Starter Game.md",
     "기술관련/Unreal/UIExtension.md",
-    "ViveStudios/업무일지/2024-07-10.md",
     "Images/Lyra Sample",
     "Images/Lyra Sample/Pasted image 20240709165608.png",
-    "ViveStudios/업무일지/2024-07-09.md",
-    "Untitled.md",
     "Images/Lyra Sample/Pasted image 20240709150022.png",
     "Images/Lyra Sample/Pasted image 20240709151006.png",
     "Images",
     "기술관련/Unreal/모듈형 프로그래밍.md",
-    "ViveStudios/업무일지/2024-07-08.md",
     "기술관련/Unreal/Modular Features Extra Actions.md",
     "기술관련/포인트 클라우드",
     "2024-07-08.md",
