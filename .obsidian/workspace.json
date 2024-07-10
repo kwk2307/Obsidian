@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md",
+                "file": "기술관련/Unreal/GAS.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md",
+                "file": "기술관련/Unreal/GAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md",
+                "file": "기술관련/Unreal/GAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md"
+                "file": "기술관련/Unreal/GAS.md"
               }
             }
           }
@@ -161,9 +161,11 @@
   },
   "active": "6e0bbe01fcc43fd3",
   "lastOpenFiles": [
+    "기술관련/Unreal/GameFeatures.md",
+    "기술관련/Unreal/GAS.md",
+    "기술관련/Unreal/CommonUI.md",
     "기술관련/Unreal/UIExtension.md",
     "기술관련/Unreal/Lyra Starter Game.md",
-    "기술관련/Unreal/CommonUI.md",
     "ViveStudios/업무일지/2024-07-10.md",
     "Images/Lyra Sample",
     "Images/Lyra Sample/Pasted image 20240709165608.png",
@@ -173,10 +175,8 @@
     "Images/Lyra Sample/Pasted image 20240709151006.png",
     "Images",
     "기술관련/Unreal/모듈형 게임플레이.md",
-    "기술관련/Unreal/GameFeatures.md",
     "기술관련/Unreal/모듈형 프로그래밍.md",
     "ViveStudios/업무일지/2024-07-08.md",
-    "기술관련/Unreal/GAS.md",
     "기술관련/포인트 클라우드/Open3D.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
     "기술관련/Unreal/Modular Features Extra Actions.md",
