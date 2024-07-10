@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md",
+                "file": "기술관련/Unreal/Lyra Sample.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e0bbe01fcc43fd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Extention.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md",
+                "file": "Extention.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md",
+                "file": "Extention.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md"
+                "file": "Extention.md"
               }
             }
           }
@@ -146,9 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aa2a80374d1e34b0",
+  "active": "6e0bbe01fcc43fd3",
   "lastOpenFiles": [
     "기술관련/Unreal/Lyra Sample.md",
+    "Extention.md",
+    "기술관련/Unreal/CommonUI.md",
     "ViveStudios/업무일지/2024-07-10.md",
     "Images/Lyra Sample",
     "Images/Lyra Sample/Pasted image 20240709165608.png",
