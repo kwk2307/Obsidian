@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/CommonGame.md",
+                "file": "ViveStudios/업무일지/2024-07-10.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/CommonGame.md",
+                "file": "ViveStudios/업무일지/2024-07-10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/CommonGame.md",
+                "file": "ViveStudios/업무일지/2024-07-10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/CommonGame.md"
+                "file": "ViveStudios/업무일지/2024-07-10.md"
               }
             }
           }
@@ -148,9 +148,9 @@
   },
   "active": "67e44a669fb4ece5",
   "lastOpenFiles": [
+    "기술관련/Unreal/CommonGame.md",
     "기술관련/Unreal/CommonUI.md",
     "기술관련/Unreal/Lyra Starter Game.md",
-    "기술관련/Unreal/CommonGame.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
     "기술관련/Unreal/UIExtension.md",
     "ViveStudios/업무일지/2024-07-10.md",
