@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md"
+                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md"
               }
             }
           }
@@ -148,9 +148,13 @@
   },
   "active": "f7cf32cce93dd1fc",
   "lastOpenFiles": [
-    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+    "LyraPawnData.md",
     "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
+    "LyraExerpienceActionSet.md",
+    "Game Feature.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
+    "Pasted image 20240711184945.png",
+    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
     "Images/Pasted image 20240711143909.png",
     "ViveStudios/업무일지/2024-07-11.md",
@@ -173,8 +177,6 @@
     "기술관련/GStreamer.md",
     "기술관련/Unreal/Lyra Sample.md",
     "기술관련/Unreal/GAS.md",
-    "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
-    "기술관련/포인트 클라우드/Open3D.md",
     "기술관련/포인트 클라우드",
     "기술관련/Unreal",
     "Images/Lyra Sample/Pasted image 20240709150022.png",
@@ -182,7 +184,6 @@
     "Images/Lyra Sample/Pasted image 20240709151006.png",
     "Images/Lyra Sample",
     "Images",
-    "ViveStudios/프로젝트/KAI POS2.md",
     "기술관련",
     "ViveStudios/프로젝트",
     "ViveStudios/업무일지",
