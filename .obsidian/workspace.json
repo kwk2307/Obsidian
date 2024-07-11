@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GameFrameWorkComponentManager.md",
+                "file": "기술관련/Unreal/GameFrameworkComponentManager.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GameFrameWorkComponentManager.md",
+                "file": "기술관련/Unreal/GameFrameworkComponentManager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GameFrameWorkComponentManager.md",
+                "file": "기술관련/Unreal/GameFrameworkComponentManager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GameFrameWorkComponentManager.md"
+                "file": "기술관련/Unreal/GameFrameworkComponentManager.md"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "8c9d1690d7b24876",
   "lastOpenFiles": [
+    "기술관련/Unreal/Modular Gameplay Plugin.md",
+    "기술관련/Unreal/GameFrameworkComponentManager.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
-    "GameFrameWorkComponentManager.md",
     "ViveStudios/업무일지/2024-07-11.md",
     "ViveStudios/업무일지/2024-07-10.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
@@ -170,7 +171,6 @@
     "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
     "기술관련/Unreal/GameFeatures.md",
     "기술관련/Unreal/Gameplay Ability System.md",
-    "기술관련/Unreal/Modular Gameplay.md",
     "기술관련/Unreal/Unreal Engine Game Flow.md",
     "기술관련/Unreal/VRExpansionPlugin.md",
     "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
