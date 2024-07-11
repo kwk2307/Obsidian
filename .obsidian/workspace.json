@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/Asset Manager.md",
+                "file": "기술관련/Unreal/Lyra Starter Game.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Asset Manager.md",
+                "file": "기술관련/Unreal/Lyra Starter Game.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Asset Manager.md",
+                "file": "기술관련/Unreal/Lyra Starter Game.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Asset Manager.md"
+                "file": "기술관련/Unreal/Lyra Starter Game.md"
               }
             }
           }
@@ -148,14 +148,14 @@
   },
   "active": "c8c3dc7d94d9f3d9",
   "lastOpenFiles": [
-    "기술관련/Unreal/CommonGame.md",
-    "기술관련/Unreal/CommonUI.md",
     "기술관련/Unreal/Gameplay Ability System.md",
+    "기술관련/Unreal/CommonUI.md",
     "기술관련/Unreal/GameFeatures.md",
+    "기술관련/Unreal/CommonGame.md",
+    "기술관련/Unreal/Asset Manager.md",
     "기술관련/ZED SDK.md",
     "기술관련/Unreal/UIExtension.md",
     "기술관련/Unreal/Lyra Starter Game.md",
-    "기술관련/Unreal/Asset Manager.md",
     "기술관련/GStreamer.md",
     "ViveStudios/업무일지/2024-07-10.md",
     "기술관련/Unreal/Lyra Sample.md",
