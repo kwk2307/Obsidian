@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b67f645aff77181a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ViveStudios/업무일지/2024-07-11.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md",
+                "file": "ViveStudios/업무일지/2024-07-11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md",
+                "file": "ViveStudios/업무일지/2024-07-11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md"
+                "file": "ViveStudios/업무일지/2024-07-11.md"
               }
             }
           }
@@ -159,27 +171,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce2c19e9e08795e5",
+  "active": "b67f645aff77181a",
   "lastOpenFiles": [
-    "Lyra Starter Game 활용.md",
-    "기술관련/Unreal/Lyra Starter Game.md",
-    "기술관련/Unreal/Gameplay Ability System.md",
-    "기술관련/Unreal/CommonUI.md",
-    "기술관련/Unreal/GameFeatures.md",
-    "기술관련/Unreal/CommonGame.md",
     "기술관련/Unreal/Asset Manager.md",
-    "기술관련/ZED SDK.md",
+    "기술관련/Unreal/CommonUI.md",
+    "기술관련/Unreal/CommonGame.md",
+    "기술관련/Unreal/GameFeatures.md",
+    "기술관련/Unreal/Gameplay Ability System.md",
+    "기술관련/Unreal/Lyra Starter Game.md",
     "기술관련/Unreal/UIExtension.md",
-    "기술관련/GStreamer.md",
+    "기술관련/Unreal/VRExpansionPlugin.md",
+    "기술관련/Unreal/Action.md",
+    "Lyra Starter Game 활용.md",
+    "ViveStudios/업무일지/2024-07-11.md",
+    "ViveStudios/업무일지/2024-07-08.md",
+    "ViveStudios/업무일지/2024-07-09.md",
     "ViveStudios/업무일지/2024-07-10.md",
+    "기술관련/Unreal/모듈형 게임플레이.md",
+    "기술관련/ZED SDK.md",
+    "기술관련/GStreamer.md",
     "기술관련/Unreal/Lyra Sample.md",
     "기술관련/Unreal/GAS.md",
-    "ViveStudios/업무일지/2024-07-09.md",
-    "ViveStudios/업무일지/2024-07-08.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
     "기술관련/포인트 클라우드/Open3D.md",
     "기술관련/포인트 클라우드",
-    "기술관련/Unreal/모듈형 게임플레이.md",
     "기술관련/Unreal",
     "Images/Lyra Sample/Pasted image 20240709150022.png",
     "Images/Lyra Sample/Pasted image 20240709165608.png",
@@ -195,9 +210,6 @@
     "ViveStudios/업무일지",
     "ViveStudios",
     "투자관련/투자 계획.md",
-    "투자관련/해외 고배당주.md",
-    "투자관련/국내 ETF.md",
-    "투자관련/ISA.md",
     "투자관련"
   ]
 }
