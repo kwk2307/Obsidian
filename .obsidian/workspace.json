@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-11.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c9d1690d7b24876",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GameFrameWorkComponentManager.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-11.md",
+                "file": "GameFrameWorkComponentManager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-11.md",
+                "file": "GameFrameWorkComponentManager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-11.md"
+                "file": "GameFrameWorkComponentManager.md"
               }
             }
           }
@@ -146,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f7cf32cce93dd1fc",
+  "active": "8c9d1690d7b24876",
   "lastOpenFiles": [
-    "ViveStudios/업무일지/2024-07-10.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
+    "GameFrameWorkComponentManager.md",
+    "ViveStudios/업무일지/2024-07-11.md",
+    "ViveStudios/업무일지/2024-07-10.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
     "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
@@ -162,7 +177,6 @@
     "기술관련/Unreal/Lyra Starter Game/CommonGame.md",
     "기술관련/Unreal/Lyra Starter Game/Asset Manager.md",
     "기술관련/Unreal/Lyra Starter Game/Action.md",
-    "ViveStudios/업무일지/2024-07-11.md",
     "기술관련/Unreal/Lyra Starter Game",
     "ViveStudios/업무일지/2024-07-08.md",
     "ViveStudios/업무일지/2024-07-09.md",
@@ -181,7 +195,6 @@
     "Images",
     "ViveStudios/프로젝트/KAI POS2.md",
     "기술관련/Open3D.md",
-    "기술관련/포인트 클라우드 정합.md",
     "기술관련",
     "ViveStudios/프로젝트",
     "ViveStudios/업무일지",
