@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c8c3dc7d94d9f3d9",
+            "id": "f7cf32cce93dd1fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ce2c19e9e08795e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b67f645aff77181a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "기술관련/Unreal/Modular Gameplay.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7bc5e6006e9dc6f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md"
+                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Character.md"
               }
             }
           }
@@ -183,22 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7bc5e6006e9dc6f3",
+  "active": "f7cf32cce93dd1fc",
   "lastOpenFiles": [
-    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
-    "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
-    "기술관련/Unreal/Modular Gameplay.md",
-    "기술관련/Unreal/Gameplay Ability System.md",
+    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
+    "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
     "기술관련/Unreal/GameFeatures.md",
+    "기술관련/Unreal/Gameplay Ability System.md",
+    "기술관련/Unreal/Modular Gameplay.md",
+    "기술관련/Unreal/Unreal Engine Game Flow.md",
+    "기술관련/Unreal/VRExpansionPlugin.md",
+    "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
     "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
     "기술관련/Unreal/Lyra Starter Game/CommonGame.md",
     "기술관련/Unreal/Lyra Starter Game/Asset Manager.md",
     "기술관련/Unreal/Lyra Starter Game/Action.md",
-    "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
     "ViveStudios/업무일지/2024-07-11.md",
     "기술관련/Unreal/Lyra Starter Game",
-    "기술관련/Unreal/VRExpansionPlugin.md",
     "ViveStudios/업무일지/2024-07-08.md",
     "ViveStudios/업무일지/2024-07-09.md",
     "ViveStudios/업무일지/2024-07-10.md",
@@ -219,7 +183,6 @@
     "기술관련/Open3D.md",
     "기술관련/포인트 클라우드 정합.md",
     "기술관련",
-    "2024-07-08.md",
     "ViveStudios/프로젝트",
     "ViveStudios/업무일지",
     "ViveStudios",
