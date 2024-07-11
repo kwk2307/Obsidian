@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md",
+                "file": "기술관련/Unreal/CommonUI.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md",
+                "file": "기술관련/Unreal/CommonUI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md",
+                "file": "기술관련/Unreal/CommonUI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-10.md"
+                "file": "기술관련/Unreal/CommonUI.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "c8c3dc7d94d9f3d9",
   "lastOpenFiles": [
+    "기술관련/Unreal/CommonGame.md",
+    "ViveStudios/업무일지/2024-07-10.md",
+    "ViveStudios/업무일지/2024-07-09.md",
     "ViveStudios/업무일지/2024-07-08.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
     "기술관련/포인트 클라우드/Open3D.md",
@@ -160,11 +163,8 @@
     "기술관련/Unreal/Gameplay Ability System.md",
     "기술관련/Unreal/CommonUI.md",
     "기술관련/Unreal/Asset Manager.md",
-    "기술관련/Unreal/CommonGame.md",
     "기술관련/Unreal",
     "기술관련/GStreamer.md",
-    "ViveStudios/업무일지/2024-07-10.md",
-    "ViveStudios/업무일지/2024-07-09.md",
     "Images/Lyra Sample/Pasted image 20240709150022.png",
     "Images/Lyra Sample/Pasted image 20240709165608.png",
     "Images/Lyra Sample/Pasted image 20240709151006.png",
