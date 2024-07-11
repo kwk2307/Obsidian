@@ -11,12 +11,8 @@
             "id": "c8c3dc7d94d9f3d9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "기술관련/Unreal/CommonUI.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/CommonUI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/CommonUI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "기술관련/Unreal/CommonUI.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,23 +140,26 @@
   },
   "active": "c8c3dc7d94d9f3d9",
   "lastOpenFiles": [
+    "기술관련/ZED SDK.md",
+    "기술관련/Unreal/UIExtension.md",
+    "기술관련/Unreal/Lyra Starter Game.md",
+    "기술관련/Unreal/Gameplay Ability System.md",
+    "기술관련/Unreal/CommonUI.md",
     "기술관련/Unreal/CommonGame.md",
+    "기술관련/Unreal/Asset Manager.md",
+    "기술관련/GStreamer.md",
     "ViveStudios/업무일지/2024-07-10.md",
+    "기술관련/Unreal/Lyra Sample.md",
+    "기술관련/Unreal/GAS.md",
+    "Untitled.md",
     "ViveStudios/업무일지/2024-07-09.md",
     "ViveStudios/업무일지/2024-07-08.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
     "기술관련/포인트 클라우드/Open3D.md",
     "기술관련/포인트 클라우드",
-    "기술관련/ZED SDK.md",
     "기술관련/Unreal/모듈형 게임플레이.md",
-    "기술관련/Unreal/Lyra Starter Game.md",
     "기술관련/Unreal/GameFeatures.md",
-    "기술관련/Unreal/UIExtension.md",
-    "기술관련/Unreal/Gameplay Ability System.md",
-    "기술관련/Unreal/CommonUI.md",
-    "기술관련/Unreal/Asset Manager.md",
     "기술관련/Unreal",
-    "기술관련/GStreamer.md",
     "Images/Lyra Sample/Pasted image 20240709150022.png",
     "Images/Lyra Sample/Pasted image 20240709165608.png",
     "Images/Lyra Sample/Pasted image 20240709151006.png",
