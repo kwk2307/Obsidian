@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ce2c19e9e08795e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lyra Starter Game 활용.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md",
+                "file": "Lyra Starter Game 활용.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md",
+                "file": "Lyra Starter Game 활용.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game.md"
+                "file": "Lyra Starter Game 활용.md"
               }
             }
           }
@@ -146,8 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8c3dc7d94d9f3d9",
+  "active": "ce2c19e9e08795e5",
   "lastOpenFiles": [
+    "기술관련/Unreal/Lyra Starter Game.md",
+    "Lyra Starter Game 활용.md",
     "기술관련/Unreal/Gameplay Ability System.md",
     "기술관련/Unreal/CommonUI.md",
     "기술관련/Unreal/GameFeatures.md",
@@ -155,12 +170,10 @@
     "기술관련/Unreal/Asset Manager.md",
     "기술관련/ZED SDK.md",
     "기술관련/Unreal/UIExtension.md",
-    "기술관련/Unreal/Lyra Starter Game.md",
     "기술관련/GStreamer.md",
     "ViveStudios/업무일지/2024-07-10.md",
     "기술관련/Unreal/Lyra Sample.md",
     "기술관련/Unreal/GAS.md",
-    "Untitled.md",
     "ViveStudios/업무일지/2024-07-09.md",
     "ViveStudios/업무일지/2024-07-08.md",
     "기술관련/포인트 클라우드/포인트 클라우드 정합.md",
