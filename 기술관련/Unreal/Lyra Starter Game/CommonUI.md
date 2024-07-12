@@ -10,9 +10,7 @@
 	 - 
 
 **OverallUILayout**
-1. ![[Pasted image 20240712131131.png]]
-   UIExtensionPointWidget 을 원하는 위치 에 배치하고 UIExtension -> Extension Point Tag을 설정해주면 Experience -> Action -> Addwidget 을 할때 그 위치를 지정해 등록해줄 수 있음 
-2.  ![[Pasted image 20240712130632.png]]
+1. ![[Pasted image 20240712130632.png]]
    Layra HUD Layout -> Escape Menu 를  설정
    Input Config 를 설정 해주면 키 입력을 정해줄 수 있음  
 3. 
