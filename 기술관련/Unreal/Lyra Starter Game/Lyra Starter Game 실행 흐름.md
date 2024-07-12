@@ -191,7 +191,138 @@ BundleAssetList 에 CurrentExperience와 ActionSet에 등록되어 있는 Primar
 
 AssetManager에 Bundle을 어쩌구 저쩌구 해서 로드가 완료 되면  OnExperienceLoadComplete 함수를 실행함
 
-GameFeaturePluginURLs에 CurrentExperience 과 ActionSet들의 GameFeaturesToEnable를 넣어주고  
+``` 
+
+void ULyraExperienceManagerComponent::OnExperienceLoadComplete()
+
+{
+
+    check(LoadState == ELyraExperienceLoadState::Loading);
+
+    check(CurrentExperience != nullptr);
+
+  
+
+    UE_LOG(LogLyraExperience, Log, TEXT("EXPERIENCE: OnExperienceLoadComplete(CurrentExperience = %s, %s)"),
+
+        *CurrentExperience->GetPrimaryAssetId().ToString(),
+
+        *GetClientServerContextString(this));
+
+  
+
+    // find the URLs for our GameFeaturePlugins - filtering out dupes and ones that don't have a valid mapping
+
+    GameFeaturePluginURLs.Reset();
+
+  
+
+    auto CollectGameFeaturePluginURLs = [This=this](const UPrimaryDataAsset* Context, const TArray<FString>& FeaturePluginList)
+
+    {
+
+        for (const FString& PluginName : FeaturePluginList)
+
+        {
+
+            FString PluginURL;
+
+            if (UGameFeaturesSubsystem::Get().GetPluginURLByName(PluginName, /*out*/ PluginURL))
+
+            {
+
+                This->GameFeaturePluginURLs.AddUnique(PluginURL);
+
+            }
+
+            else
+
+            {
+
+                ensureMsgf(false, TEXT("OnExperienceLoadComplete failed to find plugin URL from PluginName %s for experience %s - fix data, ignoring for this run"), *PluginName, *Context->GetPrimaryAssetId().ToString());
+
+            }
+
+        }
+
+  
+
+        //      // Add in our extra plugin
+
+        //      if (!CurrentPlaylistData->GameFeaturePluginToActivateUntilDownloadedContentIsPresent.IsEmpty())
+
+        //      {
+
+        //          FString PluginURL;
+
+        //          if (UGameFeaturesSubsystem::Get().GetPluginURLByName(CurrentPlaylistData->GameFeaturePluginToActivateUntilDownloadedContentIsPresent, PluginURL))
+
+        //          {
+
+        //              GameFeaturePluginURLs.AddUnique(PluginURL);
+
+        //          }
+
+        //      }
+
+    };
+
+  
+
+    CollectGameFeaturePluginURLs(CurrentExperience, CurrentExperience->GameFeaturesToEnable);
+
+    for (const TObjectPtr<ULyraExperienceActionSet>& ActionSet : CurrentExperience->ActionSets)
+
+    {
+
+        if (ActionSet != nullptr)
+
+        {
+
+            CollectGameFeaturePluginURLs(ActionSet, ActionSet->GameFeaturesToEnable);
+
+        }
+
+    }
+
+  
+
+    // Load and activate the features  
+
+    NumGameFeaturePluginsLoading = GameFeaturePluginURLs.Num();
+
+    if (NumGameFeaturePluginsLoading > 0)
+
+    {
+
+        LoadState = ELyraExperienceLoadState::LoadingGameFeatures;
+
+        for (const FString& PluginURL : GameFeaturePluginURLs)
+
+        {
+
+            ULyraExperienceManager::NotifyOfPluginActivation(PluginURL);
+
+            UGameFeaturesSubsystem::Get().LoadAndActivateGameFeaturePlugin(PluginURL, FGameFeaturePluginLoadComplete::CreateUObject(this, &ThisClass::OnGameFeaturePluginLoadComplete));
+
+        }
+
+    }
+
+    else
+
+    {
+
+        OnExperienceFullLoadCompleted();
+
+    }
+
+}
+
+```
+
+GameFeaturePluginURLs에 CurrentExperience 과 ActionSet들의 GameFeaturesToEnable를 넣어주고  UGameFeaturesSubsystem를 통해 GameFeature들을 로드 후 실행한다. 실행이 완료된 후 에 OnGameFeaturePluginLoadComplete를 실행하게 한다. 
+
 
 
 ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted() << 로드가 완료되면 여기서 Action을 하나씩 발생? 시킴
