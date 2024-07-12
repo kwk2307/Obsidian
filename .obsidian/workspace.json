@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-12.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-12.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-12.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-12.md"
+                "file": "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "1b267123b2332148",
   "lastOpenFiles": [
-    "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
     "ViveStudios/업무일지/2024-07-12.md",
+    "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
     "Images/Pasted image 20240711184945.png",
     "LyraPawnData.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
