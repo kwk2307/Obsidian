@@ -323,7 +323,152 @@ void ULyraExperienceManagerComponent::OnExperienceLoadComplete()
 
 GameFeaturePluginURLs에 CurrentExperience 과 ActionSet들의 GameFeaturesToEnable를 넣어주고  UGameFeaturesSubsystem를 통해 GameFeature들을 로드 후 실행한다. 실행이 완료된 후 에 OnGameFeaturePluginLoadComplete를 실행하게 한다. 
 
+```
 
+void ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted()
 
-ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted() << 로드가 완료되면 여기서 Action을 하나씩 발생? 시킴
+{
+
+    check(LoadState != ELyraExperienceLoadState::Loaded);
+
+  
+
+    // Insert a random delay for testing (if configured)
+
+    if (LoadState != ELyraExperienceLoadState::LoadingChaosTestingDelay)
+
+    {
+
+        const float DelaySecs = LyraConsoleVariables::GetExperienceLoadDelayDuration();
+
+        if (DelaySecs > 0.0f)
+
+        {
+
+            FTimerHandle DummyHandle;
+
+  
+
+            LoadState = ELyraExperienceLoadState::LoadingChaosTestingDelay;
+
+            GetWorld()->GetTimerManager().SetTimer(DummyHandle, this, &ThisClass::OnExperienceFullLoadCompleted, DelaySecs, /*bLooping=*/ false);
+
+  
+
+            return;
+
+        }
+
+    }
+
+  
+
+    LoadState = ELyraExperienceLoadState::ExecutingActions;
+
+  
+
+    // Execute the actions
+
+    FGameFeatureActivatingContext Context;
+
+  
+
+    // Only apply to our specific world context if set
+
+    const FWorldContext* ExistingWorldContext = GEngine->GetWorldContextFromWorld(GetWorld());
+
+    if (ExistingWorldContext)
+
+    {
+
+        Context.SetRequiredWorldContextHandle(ExistingWorldContext->ContextHandle);
+
+    }
+
+  
+
+    auto ActivateListOfActions = [&Context](const TArray<UGameFeatureAction*>& ActionList)
+
+    {
+
+        for (UGameFeatureAction* Action : ActionList)
+
+        {
+
+            if (Action != nullptr)
+
+            {
+
+                //@TODO: The fact that these don't take a world are potentially problematic in client-server PIE
+
+                // The current behavior matches systems like gameplay tags where loading and registering apply to the entire process,
+
+                // but actually applying the results to actors is restricted to a specific world
+
+                Action->OnGameFeatureRegistering();
+
+                Action->OnGameFeatureLoading();
+
+                Action->OnGameFeatureActivating(Context);
+
+            }
+
+        }
+
+    };
+
+  
+
+    ActivateListOfActions(CurrentExperience->Actions);
+
+    for (const TObjectPtr<ULyraExperienceActionSet>& ActionSet : CurrentExperience->ActionSets)
+
+    {
+
+        if (ActionSet != nullptr)
+
+        {
+
+            ActivateListOfActions(ActionSet->Actions);
+
+        }
+
+    }
+
+  
+
+    LoadState = ELyraExperienceLoadState::Loaded;
+
+  
+
+    OnExperienceLoaded_HighPriority.Broadcast(CurrentExperience);
+
+    OnExperienceLoaded_HighPriority.Clear();
+
+  
+
+    OnExperienceLoaded.Broadcast(CurrentExperience);
+
+    OnExperienceLoaded.Clear();
+
+  
+
+    OnExperienceLoaded_LowPriority.Broadcast(CurrentExperience);
+
+    OnExperienceLoaded_LowPriority.Clear();
+
+  
+
+    // Apply any necessary scalability settings
+
+#if !UE_SERVER
+
+    ULyraSettingsLocal::Get()->OnExperienceLoaded();
+
+#endif
+
+}
+```
+CurrentExperience과 ActionSet 들의 Action들의 OnGameFeatureRegistering, OnGameFeatureLoading, OnGameFeatureActivating 를 실행해준다. 
+
 
