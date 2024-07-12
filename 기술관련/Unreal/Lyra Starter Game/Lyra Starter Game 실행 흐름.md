@@ -191,6 +191,8 @@ BundleAssetList 에 CurrentExperience와 ActionSet에 등록되어 있는 Primar
 
 AssetManager에 Bundle을 어쩌구 저쩌구 해서 로드가 완료 되면  OnExperienceLoadComplete 함수를 실행함
 
+GameFeaturePluginURLs에 CurrentExperience 과 ActionSet들의 GameFeaturesToEnable를 넣어주고  
+
 
 ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted() << 로드가 완료되면 여기서 Action을 하나씩 발생? 시킴
 
