@@ -14,7 +14,74 @@ LyraGameMode 의 OnMatchAssignmentGiven 함수를 통해LyraExperienceManagerCom
 ![[Pasted image 20240712152452.png]]
 AssestManager 를 통해 ULyraExperienceDefinition 를 로드하고 CurrentExperience에 넣어준 후 StartExperienceLoad 함수 호출 
 
+```
+	TSet<FPrimaryAssetId> BundleAssetList;
+    TSet<FSoftObjectPath> RawAssetList;
 
+    BundleAssetList.Add(CurrentExperience->GetPrimaryAssetId());
+
+    for (const TObjectPtr<ULyraExperienceActionSet>& ActionSet : CurrentExperience->ActionSets)
+
+    {
+
+        if (ActionSet != nullptr)
+
+        {
+
+            BundleAssetList.Add(ActionSet->GetPrimaryAssetId());
+
+        }
+
+    }
+
+  
+
+    // Load assets associated with the experience
+
+  
+
+    TArray<FName> BundlesToLoad;
+
+    BundlesToLoad.Add(FLyraBundles::Equipped);
+
+  
+
+    //@TODO: Centralize this client/server stuff into the LyraAssetManager
+
+    const ENetMode OwnerNetMode = GetOwner()->GetNetMode();
+
+    const bool bLoadClient = GIsEditor || (OwnerNetMode != NM_DedicatedServer);
+
+    const bool bLoadServer = GIsEditor || (OwnerNetMode != NM_Client);
+
+    if (bLoadClient)
+
+    {
+
+        BundlesToLoad.Add(UGameFeaturesSubsystemSettings::LoadStateClient);
+
+    }
+
+    if (bLoadServer)
+
+    {
+
+        BundlesToLoad.Add(UGameFeaturesSubsystemSettings::LoadStateServer);
+
+    }
+
+  
+
+    TSharedPtr<FStreamableHandle> BundleLoadHandle = nullptr;
+
+    if (BundleAssetList.Num() > 0)
+
+    {
+
+        BundleLoadHandle = AssetManager.ChangeBundleStateForPrimaryAssets(BundleAssetList.Array(), BundlesToLoad, {}, false, FStreamableDelegate(), FStreamableManager::AsyncLoadHighPriority);
+
+    }
+```
 
 
 
