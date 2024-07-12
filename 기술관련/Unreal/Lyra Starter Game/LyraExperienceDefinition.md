@@ -1,9 +1,9 @@
 
 1. 실행
-   - Open Level 시 Option으로 넣는 방식![](file:///C:/Users/VIVEST~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
-   - 월드 세팅에서 설정하는 방식  ![](file:///C:/Users/VIVEST~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
-2. 구성![](file:///C:/Users/VIVEST~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png)
-   - GameFeatures to Enable : 로드 후 실행할 GameFeature들
+   - Open Level 시 Option으로 넣는 방식![[Pasted image 20240712181653.png]]
+   - 월드 세팅에서 설정하는 방식 ![[Pasted image 20240712181721.png]]
+2. 구성 ![[Pasted image 20240712181743.png]]
+   - Game Features to Enable: 실행할 GameFeature들
    - Default Pawn Data : 생성할 Pawn의 정보
      
 3. Default Pawn Data  

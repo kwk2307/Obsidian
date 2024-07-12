@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9fd5a6bda92e6803",
+        "id": "482d4edf119a0310",
         "type": "tabs",
         "children": [
           {
-            "id": "1b267123b2332148",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c72c35d576e04fd4",
+            "id": "49040da0769ea668",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,10 +146,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c72c35d576e04fd4",
+  "active": "49040da0769ea668",
   "lastOpenFiles": [
-    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+    "Pasted image 20240712181743.png",
+    "Pasted image 20240712181721.png",
+    "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
     "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
+    "기술관련/Unreal/Lyra Starter Game/CommonGame.md",
+    "기술관련/Unreal/Lyra Starter Game/Asset Manager.md",
+    "기술관련/Unreal/Lyra Starter Game/GameFeatures.md",
+    "기술관련/Unreal/Lyra Starter Game/GameFrameworkComponentManager.md",
+    "기술관련/Unreal/Lyra Starter Game/Gameplay Ability System.md",
+    "Pasted image 20240712181653.png",
+    "Pasted image 20240712181651.png",
+    "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
+    "Pasted image 20240712181443.png",
+    "Pasted image 20240712181413.png",
+    "Pasted image 20240712181556.png",
+    "Pasted image 20240712181552.png",
+    "Pasted image 20240712181531.png",
+    "기술관련/Unreal/Lyra Starter Game/Modular Gameplay Plugin.md",
+    "Pasted image 20240712181507.png",
+    "Pasted image 20240712181502.png",
+    "![[Pasted.md",
+    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
     "기술관련/Unreal/Unreal Engine Game Flow.md",
     "기술관련/Unreal/VRExpansionPlugin.md",
     "기술관련/GStreamer.md",
@@ -170,35 +177,17 @@
     "LyraExerpienceActionSet.md",
     "LyraPawnData.md",
     "Untitled 1.md",
-    "Images/Lyra Sample/Pasted image 20240712152452.png",
-    "Images/Lyra Sample/Pasted image 20240712130632.png",
-    "Images/Lyra Sample/Pasted image 20240711184945.png",
-    "Images/Lyra Sample/Pasted image 20240711143909.png",
-    "기술관련/Unreal/Lyra Starter Game/GameFeatures.md",
-    "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
-    "기술관련/Unreal/Lyra Starter Game/Gameplay Ability System.md",
-    "기술관련/Unreal/Lyra Starter Game/GameFrameworkComponentManager.md",
     "ViveStudios/업무일지/2024-07-12.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
     "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
-    "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
-    "Images/Lyra Sample/Pasted image 20240712131131.png",
-    "기술관련/Unreal/Lyra Starter Game/Modular Gameplay Plugin.md",
-    "기술관련/Unreal/Lyra Starter Game/CommonGame.md",
-    "기술관련/Unreal/Lyra Starter Game/Asset Manager.md",
     "기술관련/Unreal/Lyra Starter Game/Action.md",
     "기술관련/Unreal/Lyra Starter Game/UI",
     "ViveStudios/업무일지/2024-07-11.md",
     "Untitled.md",
-    "Game Feature.md",
-    "ViveStudios/업무일지/2024-07-10.md",
     "기술관련/Unreal/Lyra Starter Game",
     "기술관련/포인트 클라우드",
     "기술관련/Unreal",
-    "Images/Lyra Sample/Pasted image 20240709150022.png",
-    "Images/Lyra Sample/Pasted image 20240709165608.png",
-    "Images/Lyra Sample/Pasted image 20240709151006.png",
     "Images/Lyra Sample",
     "Images",
     "기술관련",
