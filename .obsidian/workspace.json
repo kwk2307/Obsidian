@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
+                "file": "기술관련/Unreal/Unreal Engine Game Flow.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
+                "file": "기술관련/Unreal/Unreal Engine Game Flow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
+                "file": "기술관련/Unreal/Unreal Engine Game Flow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md"
+                "file": "기술관련/Unreal/Unreal Engine Game Flow.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "49040da0769ea668",
   "lastOpenFiles": [
+    "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
     "Pasted image 20240712181743.png",
     "Pasted image 20240712181721.png",
     "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
@@ -159,7 +160,6 @@
     "기술관련/Unreal/Lyra Starter Game/Gameplay Ability System.md",
     "Pasted image 20240712181653.png",
     "Pasted image 20240712181651.png",
-    "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
     "Pasted image 20240712181443.png",
     "Pasted image 20240712181413.png",
     "Pasted image 20240712181556.png",
@@ -167,7 +167,6 @@
     "Pasted image 20240712181531.png",
     "기술관련/Unreal/Lyra Starter Game/Modular Gameplay Plugin.md",
     "Pasted image 20240712181507.png",
-    "Pasted image 20240712181502.png",
     "![[Pasted.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
     "기술관련/Unreal/Unreal Engine Game Flow.md",
