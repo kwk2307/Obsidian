@@ -10,6 +10,11 @@
 	 - 
 
 **OverallUILayout**
-	-  여기에 Stack/Queue를 등록 해놓음
+1. 여기에 Stack/Queue를 등록 해놓음
+2.  ![[Pasted image 20240712130632.png]]
+   Layra HUD Layout - Escape Menu 를 설정
+   Input Config 를 설정 
+3. 
+4. 
 	
 
