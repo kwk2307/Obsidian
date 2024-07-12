@@ -82,8 +82,7 @@ AssestManager 를 통해 ULyraExperienceDefinition 를 로드하고 CurrentExper
 
     }
 ```
-
-
+BundleAssetList 에 CurrentExperience와 ActionSet에 등록되어 있는 PrimaryAsset(ULyraExperienceDefinition, ULyraExperienceActionSet 등이 PrimaryAsset을 상속받음)의 ID를 가져와서 저장함
 
 
 ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted() << 로드가 완료되면 여기서 Action을 하나씩 발생? 시킴
