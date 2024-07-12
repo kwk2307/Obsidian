@@ -84,6 +84,113 @@ AssestManager 를 통해 ULyraExperienceDefinition 를 로드하고 CurrentExper
 ```
 BundleAssetList 에 CurrentExperience와 ActionSet에 등록되어 있는 PrimaryAsset(ULyraExperienceDefinition, ULyraExperienceActionSet 등이 PrimaryAsset을 상속받음)의 ID를 가져와서 저장함
 
+```
+    //@TODO: Centralize this client/server stuff into the LyraAssetManager
+
+    const ENetMode OwnerNetMode = GetOwner()->GetNetMode();
+
+    const bool bLoadClient = GIsEditor || (OwnerNetMode != NM_DedicatedServer);
+
+    const bool bLoadServer = GIsEditor || (OwnerNetMode != NM_Client);
+
+    if (bLoadClient)
+
+    {
+
+        BundlesToLoad.Add(UGameFeaturesSubsystemSettings::LoadStateClient);
+
+    }
+
+    if (bLoadServer)
+
+    {
+
+        BundlesToLoad.Add(UGameFeaturesSubsystemSettings::LoadStateServer);
+
+    }
+
+  
+
+    TSharedPtr<FStreamableHandle> BundleLoadHandle = nullptr;
+
+    if (BundleAssetList.Num() > 0)
+
+    {
+
+        BundleLoadHandle = AssetManager.ChangeBundleStateForPrimaryAssets(BundleAssetList.Array(), BundlesToLoad, {}, false, FStreamableDelegate(), FStreamableManager::AsyncLoadHighPriority);
+
+    }
+
+  
+
+    TSharedPtr<FStreamableHandle> RawLoadHandle = nullptr;
+
+    if (RawAssetList.Num() > 0)
+
+    {
+
+        RawLoadHandle = AssetManager.LoadAssetList(RawAssetList.Array(), FStreamableDelegate(), FStreamableManager::AsyncLoadHighPriority, TEXT("StartExperienceLoad()"));
+
+    }
+
+  
+
+    // If both async loads are running, combine them
+
+    TSharedPtr<FStreamableHandle> Handle = nullptr;
+
+    if (BundleLoadHandle.IsValid() && RawLoadHandle.IsValid())
+
+    {
+
+        Handle = AssetManager.GetStreamableManager().CreateCombinedHandle({ BundleLoadHandle, RawLoadHandle });
+
+    }
+
+    else
+
+    {
+
+        Handle = BundleLoadHandle.IsValid() ? BundleLoadHandle : RawLoadHandle;
+
+    }
+
+  
+
+    FStreamableDelegate OnAssetsLoadedDelegate = FStreamableDelegate::CreateUObject(this, &ThisClass::OnExperienceLoadComplete);
+
+    if (!Handle.IsValid() || Handle->HasLoadCompleted())
+
+    {
+
+        // Assets were already loaded, call the delegate now
+
+        FStreamableHandle::ExecuteDelegate(OnAssetsLoadedDelegate);
+
+    }
+
+    else
+
+    {
+
+        Handle->BindCompleteDelegate(OnAssetsLoadedDelegate);
+
+  
+
+        Handle->BindCancelDelegate(FStreamableDelegate::CreateLambda([OnAssetsLoadedDelegate]()
+
+            {
+
+                OnAssetsLoadedDelegate.ExecuteIfBound();
+
+            }));
+
+    }
+
+```
+
+AssetManager에 Bundle을 어쩌구 저쩌구 해서 로드가 완료 되면  OnExperienceLoadComplete 함수를 실행함
+
 
 ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted() << 로드가 완료되면 여기서 Action을 하나씩 발생? 시킴
 
