@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-12.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c72c35d576e04fd4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-12.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-12.md",
+                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-12.md"
+                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md"
               }
             }
           }
@@ -146,30 +159,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b267123b2332148",
+  "active": "c72c35d576e04fd4",
   "lastOpenFiles": [
-    "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
-    "ViveStudios/업무일지/2024-07-12.md",
-    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
-    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+    "Pasted image 20240712152452.png",
+    "Untitled 1.md",
+    "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
+    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+    "기술관련/Unreal/Lyra Starter Game/Gameplay Ability System.md",
+    "기술관련/Unreal/Lyra Starter Game/GameFrameworkComponentManager.md",
+    "기술관련/Unreal/Lyra Starter Game/GameFeatures.md",
+    "ViveStudios/업무일지/2024-07-12.md",
+    "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
+    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
     "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
     "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
-    "기술관련/Unreal/Lyra Starter Game/GameFeatures.md",
-    "기술관련/Unreal/Lyra Starter Game/GameFrameworkComponentManager.md",
     "Pasted image 20240712131131.png",
     "Pasted image 20240712130632.png",
     "Images/Pasted image 20240711184945.png",
     "LyraPawnData.md",
     "기술관련/Unreal/Lyra Starter Game/Modular Gameplay Plugin.md",
-    "기술관련/Unreal/Lyra Starter Game/Gameplay Ability System.md",
     "기술관련/Unreal/Lyra Starter Game/CommonGame.md",
     "기술관련/Unreal/Lyra Starter Game/Asset Manager.md",
     "기술관련/Unreal/Lyra Starter Game/Action.md",
     "기술관련/Unreal/Lyra Starter Game/UI",
     "ViveStudios/업무일지/2024-07-11.md",
     "Untitled.md",
-    "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
     "LyraExerpienceActionSet.md",
     "Game Feature.md",
     "Images/Pasted image 20240711143909.png",
@@ -178,7 +193,6 @@
     "기술관련/Unreal/VRExpansionPlugin.md",
     "기술관련/Unreal/Lyra Starter Game",
     "ViveStudios/업무일지/2024-07-08.md",
-    "ViveStudios/업무일지/2024-07-09.md",
     "기술관련/포인트 클라우드",
     "기술관련/Unreal",
     "Images/Lyra Sample/Pasted image 20240709150022.png",
