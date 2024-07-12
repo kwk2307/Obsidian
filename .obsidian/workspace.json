@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
+                "file": "ViveStudios/업무일지/2024-07-12.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
+                "file": "ViveStudios/업무일지/2024-07-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
+                "file": "ViveStudios/업무일지/2024-07-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/CommonUI.md"
+                "file": "ViveStudios/업무일지/2024-07-12.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "1b267123b2332148",
   "lastOpenFiles": [
+    "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
@@ -181,7 +182,6 @@
     "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
     "기술관련/Unreal/Unreal Engine Game Flow.md",
     "기술관련/Unreal/VRExpansionPlugin.md",
-    "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
     "기술관련/Unreal/Lyra Starter Game/CommonGame.md",
     "기술관련/Unreal/Lyra Starter Game/Asset Manager.md",
     "기술관련/Unreal/Lyra Starter Game/Action.md",
