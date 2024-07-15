@@ -836,3 +836,5 @@ bool UGameFeaturePluginStateMachine::SetDestination(FGameFeaturePluginStateRange
     }
 
 ```
+
+UpdateStateMachine을 실행 
