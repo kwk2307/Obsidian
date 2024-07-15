@@ -476,4 +476,363 @@ CurrentExperience과 ActionSet 들의 Action들의 OnGameFeatureRegistering, OnG
 
 *GameFeatures*
 
-LoadAndActivateGameFeaturePlugin을 하면 
+```
+void UGameFeaturesSubsystem::ChangeGameFeatureTargetState(const FString& PluginURL, EGameFeatureTargetState TargetState, const FGameFeaturePluginChangeStateComplete& CompleteDelegate)
+
+{
+
+    EGameFeaturePluginState TargetPluginState = EGameFeaturePluginState::MAX;
+
+  
+
+    switch (TargetState)
+
+    {
+
+    case EGameFeatureTargetState::Installed:    TargetPluginState = EGameFeaturePluginState::Installed;     break;
+
+    case EGameFeatureTargetState::Registered:   TargetPluginState = EGameFeaturePluginState::Registered;    break;
+
+    case EGameFeatureTargetState::Loaded:       TargetPluginState = EGameFeaturePluginState::Loaded;        break;
+
+    case EGameFeatureTargetState::Active:       TargetPluginState = EGameFeaturePluginState::Active;        break;
+
+    }
+
+  
+
+    // Make sure we have coverage on all values of EGameFeatureTargetState
+
+    static_assert(std::underlying_type<EGameFeatureTargetState>::type(EGameFeatureTargetState::Count) == 4, "");
+
+    check(TargetPluginState != EGameFeaturePluginState::MAX);
+
+  
+
+    const bool bIsPluginAllowed = GameSpecificPolicies->IsPluginAllowed(PluginURL);
+
+  
+
+    UGameFeaturePluginStateMachine* StateMachine = nullptr;
+
+    if (!bIsPluginAllowed)
+
+    {
+
+        StateMachine = FindGameFeaturePluginStateMachine(PluginURL);
+
+        if (!StateMachine)
+
+        {
+
+            UE_LOG(LogGameFeatures, Log, TEXT("Cannot create GFP State Machine: Plugin not allowed %s"), *PluginURL);
+
+  
+
+            CompleteDelegate.ExecuteIfBound(UE::GameFeatures::FResult(MakeError(UE::GameFeatures::SubsystemErrorNamespace + UE::GameFeatures::CommonErrorCodes::PluginNotAllowed)));
+
+            return;
+
+        }
+
+    }
+
+    else
+
+    {
+
+        StateMachine = FindOrCreateGameFeaturePluginStateMachine(PluginURL);
+
+    }
+
+    check(StateMachine);
+
+  
+
+    if (!bIsPluginAllowed)
+
+    {
+
+        if (TargetPluginState > StateMachine->GetCurrentState() || TargetPluginState > StateMachine->GetDestination())
+
+        {
+
+            UE_LOG(LogGameFeatures, Log, TEXT("Cannot change game feature target state: Plugin not allowed %s"), *PluginURL);
+
+  
+
+            CompleteDelegate.ExecuteIfBound(UE::GameFeatures::FResult(MakeError(UE::GameFeatures::SubsystemErrorNamespace + UE::GameFeatures::CommonErrorCodes::PluginNotAllowed)));
+
+            return;
+
+        }
+
+    }
+
+  
+
+    if (TargetState == EGameFeatureTargetState::Active &&
+
+        !StateMachine->IsRunning() &&
+
+        StateMachine->GetCurrentState() == TargetPluginState)
+
+    {
+
+        // TODO: Resolve the activated case here, this is needed because in a PIE environment the plugins
+
+        // are not sandboxed, and we need to do simulate a successful activate call in order run GFP systems
+
+        // on whichever Role runs second between client and server.
+
+  
+
+        // Refire the observer for Activated and do nothing else.
+
+        CallbackObservers(EObserverCallback::Activating, PluginURL, &StateMachine->GetPluginName(), StateMachine->GetGameFeatureDataForActivePlugin());
+
+    }
+
+    if (ShouldUpdatePluginURLData(PluginURL))
+
+    {
+
+        UpdateGameFeaturePluginURL(PluginURL, FGameFeaturePluginUpdateURLComplete());
+
+    }
+
+  
+
+    ChangeGameFeatureDestination(StateMachine, FGameFeaturePluginStateRange(TargetPluginState), CompleteDelegate);
+
+}
+
+```
+LoadAndActivateGameFeaturePlugin을 하면 UGameFeaturesSubsystem 에서 GameFeature에서 TargetState를 변경해줌 변경 해주고 ChangeGameFeatureDestination를 실행 
+
+```
+void UGameFeaturesSubsystem::ChangeGameFeatureDestination(UGameFeaturePluginStateMachine* Machine, const FGameFeaturePluginStateRange& StateRange, FGameFeaturePluginChangeStateComplete CompleteDelegate)
+
+{
+
+    const bool bSetDestination = Machine->SetDestination(StateRange,
+
+        FGameFeatureStateTransitionComplete::CreateUObject(this, &ThisClass::ChangeGameFeatureTargetStateComplete, CompleteDelegate));
+
+  
+
+    if (bSetDestination)
+
+    {
+
+        UE_LOG(LogGameFeatures, Verbose, TEXT("ChangeGameFeatureDestination: Set Game Feature %s Destination State to [%s, %s]"), *Machine->GetGameFeatureName(), *UE::GameFeatures::ToString(StateRange.MinState), *UE::GameFeatures::ToString(StateRange.MaxState));
+
+    }
+
+    else
+
+    {
+
+        FGameFeaturePluginStateRange CurrDesitination = Machine->GetDestination();
+
+        UE_LOG(LogGameFeatures, Display, TEXT("ChangeGameFeatureDestination: Attempting to cancel transition for Game Feature %s. Desired [%s, %s]. Current [%s, %s]"),
+
+            *Machine->GetGameFeatureName(),
+
+            *UE::GameFeatures::ToString(StateRange.MinState), *UE::GameFeatures::ToString(StateRange.MaxState),
+
+            *UE::GameFeatures::ToString(CurrDesitination.MinState), *UE::GameFeatures::ToString(CurrDesitination.MaxState));
+
+  
+
+        // Try canceling any current transition, then retry
+
+        auto OnCanceled = [this, StateRange, CompleteDelegate](UGameFeaturePluginStateMachine* Machine) mutable
+
+        {
+
+            // Special case for terminal state since it cannot be exited, we need to make a new machine
+
+            if (Machine->GetCurrentState() == EGameFeaturePluginState::Terminal)
+
+            {
+
+                UGameFeaturePluginStateMachine* NewMachine = FindOrCreateGameFeaturePluginStateMachine(Machine->GetPluginURL());
+
+                checkf(NewMachine != Machine, TEXT("Game Feature Plugin %s should have already been removed from subsystem!"), *Machine->GetPluginURL());
+
+                Machine = NewMachine;
+
+            }
+
+  
+
+            // Now that the transition has been canceled, retry reaching the desired destination
+
+            const bool bSetDestination = Machine->SetDestination(StateRange,
+
+                FGameFeatureStateTransitionComplete::CreateUObject(this, &ThisClass::ChangeGameFeatureTargetStateComplete, CompleteDelegate));
+
+  
+
+            if (!ensure(bSetDestination))
+
+            {
+
+                UE_LOG(LogGameFeatures, Warning, TEXT("ChangeGameFeatureDestination: Failed to set Game Feature %s Destination State to [%s, %s]"), *Machine->GetGameFeatureName(), *UE::GameFeatures::ToString(StateRange.MinState), *UE::GameFeatures::ToString(StateRange.MaxState));
+
+  
+
+                CompleteDelegate.ExecuteIfBound(UE::GameFeatures::FResult(MakeError(UE::GameFeatures::SubsystemErrorNamespace + UE::GameFeatures::CommonErrorCodes::UnreachableState)));
+
+            }
+
+            else
+
+            {
+
+                UE_LOG(LogGameFeatures, Display, TEXT("ChangeGameFeatureDestination: OnCanceled, set Game Feature %s Destination State to [%s, %s]"), *Machine->GetGameFeatureName(), *UE::GameFeatures::ToString(StateRange.MinState), *UE::GameFeatures::ToString(StateRange.MaxState));
+
+            }
+
+        };
+
+  
+
+        const bool bCancelPending = Machine->TryCancel(FGameFeatureStateTransitionCanceled::CreateWeakLambda(this, MoveTemp(OnCanceled)));
+
+        if (!ensure(bCancelPending))
+
+        {
+
+            UE_LOG(LogGameFeatures, Warning, TEXT("ChangeGameFeatureDestination: Failed to cancel Game Feature %s"), *Machine->GetGameFeatureName());
+
+  
+
+            CompleteDelegate.ExecuteIfBound(UE::GameFeatures::FResult(MakeError(UE::GameFeatures::SubsystemErrorNamespace + UE::GameFeatures::CommonErrorCodes::UnreachableState + UE::GameFeatures::CommonErrorCodes::CancelAddonCode)));
+
+        }
+
+    }
+
+}
+
+```
+StateMachine의 SetDestination를 실행 
+
+```
+bool UGameFeaturePluginStateMachine::SetDestination(FGameFeaturePluginStateRange InDestination, FGameFeatureStateTransitionComplete OnFeatureStateTransitionComplete, FDelegateHandle* OutCallbackHandle /*= nullptr*/)
+
+{
+
+    check(IsValidDestinationState(InDestination.MinState));
+
+    check(IsValidDestinationState(InDestination.MaxState));
+
+  
+
+    if (!InDestination.IsValid())
+
+    {
+
+        // Invalid range
+
+        return false;
+
+    }
+
+  
+
+    if (CurrentStateInfo.State == EGameFeaturePluginState::Terminal && !InDestination.Contains(EGameFeaturePluginState::Terminal))
+
+    {
+
+        // Can't tranistion away from terminal state
+
+        return false;
+
+    }
+
+  
+
+    if (!IsRunning())
+
+    {
+
+        // Not running so any new range is acceptable
+
+  
+
+        if (OutCallbackHandle)
+
+        {
+
+            OutCallbackHandle->Reset();
+
+        }
+
+  
+
+        FDestinationGameFeaturePluginState* CurrState = AllStates[CurrentStateInfo.State]->AsDestinationState();
+
+  
+
+        if (InDestination.Contains(CurrentStateInfo.State))
+
+        {
+
+            OnFeatureStateTransitionComplete.ExecuteIfBound(this, MakeValue());
+
+            return true;
+
+        }
+
+        if (CurrentStateInfo.State < InDestination)
+
+        {
+
+            FDestinationGameFeaturePluginState* MinDestState = AllStates[InDestination.MinState]->AsDestinationState();
+
+            FDelegateHandle CallbackHandle = MinDestState->OnDestinationStateReached.Add(MoveTemp(OnFeatureStateTransitionComplete));
+
+            if (OutCallbackHandle)
+
+            {
+
+                *OutCallbackHandle = CallbackHandle;
+
+            }
+
+        }
+
+        else if (CurrentStateInfo.State > InDestination)
+
+        {
+
+            FDestinationGameFeaturePluginState* MaxDestState = AllStates[InDestination.MaxState]->AsDestinationState();
+
+            FDelegateHandle CallbackHandle = MaxDestState->OnDestinationStateReached.Add(MoveTemp(OnFeatureStateTransitionComplete));
+
+            if (OutCallbackHandle)
+
+            {
+
+                *OutCallbackHandle = CallbackHandle;
+
+            }
+
+        }
+
+  
+
+        StateProperties.Destination = InDestination;
+
+        UpdateStateMachine();
+
+  
+
+        return true;
+
+    }
+
+```
