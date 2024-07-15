@@ -323,7 +323,7 @@ void ULyraExperienceManagerComponent::OnExperienceLoadComplete()
 
 ```
 
-GameFeaturePluginURLs에 CurrentExperience 과 ActionSet들의 GameFeaturesToEnable를 넣어주고  UGameFeaturesSubsystem를 통해 GameFeature들을 로드 후 실행한다. 실행이 완료된 후 에 OnGameFeaturePluginLoadComplete를 실행하게 한다. 
+GameFeaturePluginURLs에 CurrentExperience 과 ActionSet들의 GameFeaturesToEnable를 넣어주고  UGameFeaturesSubsystem를 통해 GameFeature들을 로드 후 실행한다(여기서 GameFeatures SubSystem 으로 넘어감) . 실행이 완료된 후 에 OnGameFeaturePluginLoadComplete를 실행하게 한다. 
 
 ```
 
@@ -476,3 +476,4 @@ CurrentExperience과 ActionSet 들의 Action들의 OnGameFeatureRegistering, OnG
 
 *GameFeatures*
 
+LoadAndActivateGameFeaturePlugin을 하면 
