@@ -718,8 +718,8 @@ void UGameFeaturesSubsystem::ChangeGameFeatureDestination(UGameFeaturePluginStat
 }
 
 ```
-StateMachine의 SetDestination를 실행 
 
+StateMachine의 SetDestination를 실행 
 ```
 bool UGameFeaturePluginStateMachine::SetDestination(FGameFeaturePluginStateRange InDestination, FGameFeatureStateTransitionComplete OnFeatureStateTransitionComplete, FDelegateHandle* OutCallbackHandle /*= nullptr*/)
 
@@ -836,5 +836,304 @@ bool UGameFeaturePluginStateMachine::SetDestination(FGameFeaturePluginStateRange
     }
 
 ```
+UpdateStateMachine을 실행
 
-UpdateStateMachine을 실행 
+```
+void UGameFeaturePluginStateMachine::UpdateStateMachine()
+
+{
+
+    EGameFeaturePluginState CurrentState = GetCurrentState();
+
+    if (bInUpdateStateMachine)
+
+    {
+
+        UE_LOG(LogGameFeatures, Verbose, TEXT("Game feature state machine skipping update for %s in ::UpdateStateMachine. Current State: %s"), *GetGameFeatureName(), *UE::GameFeatures::ToString(CurrentState));
+
+        return;
+
+    }
+
+  
+
+    TOptional<TGuardValue<bool>> ScopeGuard(InPlace, bInUpdateStateMachine, true);
+
+    using StateIt = std::underlying_type<EGameFeaturePluginState>::type;
+
+  
+
+    auto DoCallbacks = [this](const UE::GameFeatures::FResult& Result, StateIt Begin, StateIt End)
+
+    {
+
+        for (StateIt iState = Begin; iState < End; ++iState)
+
+        {
+
+            if (FDestinationGameFeaturePluginState* DestState = AllStates[iState]->AsDestinationState())
+
+            {
+
+                // Use a local callback on the stack. If SetDestination() is called from the callback then we don't want to stomp the callback
+
+                // for the new state transition request.
+
+                // Callback from terminal state could also trigger a GC that would destroy the state machine
+
+                FDestinationGameFeaturePluginState::FOnDestinationStateReached LocalOnDestinationStateReached(MoveTemp(DestState->OnDestinationStateReached));
+
+                DestState->OnDestinationStateReached.Clear();
+
+  
+
+                LocalOnDestinationStateReached.Broadcast(this, Result);
+
+            }
+
+        }
+
+    };
+
+  
+
+    auto DoCallback = [&DoCallbacks](const UE::GameFeatures::FResult& Result, StateIt InState)
+
+    {
+
+        DoCallbacks(Result, InState, InState + 1);
+
+    };
+
+  
+
+    bool bKeepProcessing = false;
+
+    int32 NumTransitions = 0;
+
+    const int32 MaxTransitions = 10000;
+
+    do
+
+    {
+
+        bKeepProcessing = false;
+
+  
+
+        FGameFeaturePluginStateStatus StateStatus;
+
+        AllStates[CurrentState]->UpdateState(StateStatus);
+
+  
+
+        if (StateStatus.TransitionToState == CurrentState)
+
+        {
+
+            UE_LOG(LogGameFeatures, Fatal, TEXT("Game feature state %s transitioning to itself. GameFeature: %s"), *UE::GameFeatures::ToString(CurrentState), *GetGameFeatureName());
+
+        }
+
+  
+
+        if (StateStatus.TransitionToState != EGameFeaturePluginState::Uninitialized)
+
+        {
+
+            UE_LOG(LogGameFeatures, Verbose, TEXT("Game feature '%s' transitioning state (%s -> %s)"), *GetGameFeatureName(), *UE::GameFeatures::ToString(CurrentState), *UE::GameFeatures::ToString(StateStatus.TransitionToState));
+
+            AllStates[CurrentState]->EndState();
+
+            CurrentStateInfo = FGameFeaturePluginStateInfo(StateStatus.TransitionToState);
+
+            CurrentState = StateStatus.TransitionToState;
+
+            check(CurrentState != EGameFeaturePluginState::MAX);
+
+            AllStates[CurrentState]->BeginState();
+
+  
+
+            if (CurrentState == EGameFeaturePluginState::Terminal)
+
+            {
+
+                // Remove from gamefeature subsystem before calling back in case this GFP is reloaded on callback,
+
+                // but make sure we don't get destroyed from a GC during a callback
+
+                UGameFeaturesSubsystem::Get().BeginTermination(this);
+
+            }
+
+  
+
+            if (StateProperties.bTryCancel && AllStates[CurrentState]->GetStateType() != EGameFeaturePluginStateType::Transition)
+
+            {
+
+                StateProperties.Destination = FGameFeaturePluginStateRange(CurrentState);
+
+  
+
+                StateProperties.bTryCancel = false;
+
+                bKeepProcessing = false;
+
+  
+
+                // Make sure bInUpdateStateMachine is not set while processing callbacks if we are at our destination
+
+                ScopeGuard.Reset();
+
+  
+
+                // For all callbacks, return the CanceledResult
+
+                DoCallbacks(UE::GameFeatures::CanceledResult, 0, EGameFeaturePluginState::MAX);
+
+  
+
+                // Must be called after transtition callbacks, UGameFeaturesSubsystem::ChangeGameFeatureTargetStateComplete may remove the this machine from the subsystem
+
+                FGameFeaturePluginStateMachineProperties::FOnTransitionCanceled LocalOnTransitionCanceled(MoveTemp(StateProperties.OnTransitionCanceled));
+
+                StateProperties.OnTransitionCanceled.Clear();
+
+                LocalOnTransitionCanceled.Broadcast(this);
+
+            }
+
+            else if (const bool bError = !StateStatus.TransitionResult.HasValue(); bError)
+
+            {
+
+                check(IsValidErrorState(CurrentState));
+
+                StateProperties.Destination = FGameFeaturePluginStateRange(CurrentState);
+
+  
+
+                bKeepProcessing = false;
+
+                // Make sure bInUpdateStateMachine is not set while processing callbacks if we are at our destination
+
+                ScopeGuard.Reset();
+
+  
+
+                // In case of an error, callback all possible callbacks
+
+                DoCallbacks(StateStatus.TransitionResult, 0, EGameFeaturePluginState::MAX);
+
+            }
+
+            else
+
+            {
+
+                bKeepProcessing = AllStates[CurrentState]->GetStateType() == EGameFeaturePluginStateType::Transition || !StateProperties.Destination.Contains(CurrentState);
+
+                if (!bKeepProcessing)
+
+                {
+
+                    // Make sure bInUpdateStateMachine is not set while processing callbacks if we are at our destination
+
+                    ScopeGuard.Reset();
+
+                }
+
+  
+
+                DoCallback(StateStatus.TransitionResult, CurrentState);
+
+            }
+
+  
+
+            if (CurrentState == EGameFeaturePluginState::Terminal)
+
+            {
+
+                check(bKeepProcessing == false);
+
+                // Now that callbacks are done this machine can be cleaned up
+
+                UGameFeaturesSubsystem::Get().FinishTermination(this);
+
+                MarkAsGarbage();
+
+            }
+
+        }
+
+  
+
+        if (NumTransitions++ > MaxTransitions)
+
+        {
+
+            UE_LOG(LogGameFeatures, Fatal, TEXT("Infinite loop in game feature state machine transitions. Current state %s. GameFeature: %s"), *UE::GameFeatures::ToString(CurrentState), *GetGameFeatureName());
+
+        }
+
+    } while (bKeepProcessing);
+
+}
+
+```
+ CurrentState의 UpdateState를 실행
+ 
+```
+    virtual void UpdateState(FGameFeaturePluginStateStatus& StateStatus) override
+
+    {
+
+        TRACE_CPUPROFILER_EVENT_SCOPE(GFP_Activating);
+
+        check(GEngine);
+
+        check(StateProperties.GameFeatureData);
+
+  
+
+        FGameFeatureActivatingContext Context;
+
+  
+
+        if (AllowIniLoading())
+
+        {
+
+            StateProperties.GameFeatureData->InitializeHierarchicalPluginIniFiles(StateProperties.PluginInstalledFilename);
+
+        }
+
+  
+
+        UGameFeaturesSubsystem::Get().OnGameFeatureActivating(StateProperties.GameFeatureData, StateProperties.PluginName, Context, StateProperties.PluginIdentifier.GetFullPluginURL());
+
+  
+
+        // If this plugin caused localization data to load, wait for that here before marking it as active
+
+        if (TSharedPtr<IPlugin> Plugin = IPluginManager::Get().FindPlugin(StateProperties.PluginName);
+
+            Plugin && Plugin->GetDescriptor().bExplicitlyLoaded && Plugin->GetDescriptor().LocalizationTargets.Num() > 0)
+
+        {
+
+            FTextLocalizationManager::Get().WaitForAsyncTasks();
+
+        }
+
+  
+
+        StateStatus.SetTransition(EGameFeaturePluginState::Active);
+
+    }
+```
+
+GameFeaturesSubsystem의 OnGameFeatureActivating를 실행 하면서 각 Action을 실행함
