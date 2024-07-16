@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+                "file": "ViveStudios/업무일지/2024-07-16.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+                "file": "ViveStudios/업무일지/2024-07-16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+                "file": "ViveStudios/업무일지/2024-07-16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md"
+                "file": "ViveStudios/업무일지/2024-07-16.md"
               }
             }
           }
@@ -148,9 +148,10 @@
   },
   "active": "49040da0769ea668",
   "lastOpenFiles": [
+    "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
+    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
     "기술관련/Unreal/Unreal Engine Game Flow.md",
-    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
     "기술관련/Unreal/Lyra Starter Game/GameFrameworkComponentManager.md",
     "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
@@ -162,7 +163,6 @@
     "기술관련/Unreal/Lyra Starter Game/Gameplay Ability System.md",
     "ViveStudios/업무일지/2024-07-15.md",
     "기술관련/Unreal/Lyra Starter Game/GameFeatures.md",
-    "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
     "Images/Lyra Sample/Pasted image 20240712181743.png",
     "Images/Lyra Sample/Pasted image 20240712181721.png",
     "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
