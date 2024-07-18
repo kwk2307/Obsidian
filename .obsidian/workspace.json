@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-18.md",
+                "file": "기술관련/ZED SDK.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-18.md",
+                "file": "기술관련/ZED SDK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-18.md",
+                "file": "기술관련/ZED SDK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-18.md"
+                "file": "기술관련/ZED SDK.md"
               }
             }
           }
@@ -148,12 +148,12 @@
   },
   "active": "49040da0769ea668",
   "lastOpenFiles": [
-    "ViveStudios/업무일지/2024-07-17.md",
+    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
     "ViveStudios/업무일지/2024-07-18.md",
+    "ViveStudios/업무일지/2024-07-17.md",
     "ViveStudios/업무일지/2024-07-16.md",
     "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
-    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
     "기술관련/Unreal/Unreal Engine Game Flow.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
     "기술관련/Unreal/Lyra Starter Game/GameFrameworkComponentManager.md",
