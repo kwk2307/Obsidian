@@ -23,9 +23,11 @@
             "id": "7c7d03a680cc882d",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.6.7"
+                "file": "ViveStudios/업무일지/2024-07-19.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
