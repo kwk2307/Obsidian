@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7c7d03a680cc882d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "49040da0769ea668",
+  "active": "7c7d03a680cc882d",
   "lastOpenFiles": [
     "ViveStudios/업무일지/2024-07-18.md",
     "ViveStudios/업무일지/2024-07-19.md",
