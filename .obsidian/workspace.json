@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-19.md",
+                "file": "ViveStudios/업무일지/2024-07-22.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-19.md",
+                "file": "ViveStudios/업무일지/2024-07-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-19.md",
+                "file": "ViveStudios/업무일지/2024-07-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-19.md"
+                "file": "ViveStudios/업무일지/2024-07-22.md"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "b3cfa5ecf15fc586",
   "lastOpenFiles": [
-    "ViveStudios/업무일지/2024-07-18.md",
     "ViveStudios/업무일지/2024-07-19.md",
+    "ViveStudios/업무일지/2024-07-22.md",
+    "ViveStudios/업무일지/2024-07-18.md",
     "기술관련/ZED SDK.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
     "ViveStudios/업무일지/2024-07-17.md",
@@ -196,7 +197,6 @@
     "기술관련/Unreal/VRExpansionPlugin.md",
     "기술관련/GStreamer.md",
     "LyraExerpienceActionSet.md",
-    "LyraPawnData.md",
     "기술관련/Unreal/Lyra Starter Game/UI",
     "기술관련/Unreal/Lyra Starter Game",
     "기술관련/포인트 클라우드",
