@@ -4,10 +4,7 @@
   - UDP
     udpsrc port=5000 ! application/x-rtp,clock-rate=90000,payload=96 ! queue ! rtph264depay ! h264parse ! avdec_h264 ! queue ! videoconvert ! video/x-raw,format=(string)RGBA ! videoconvert ! appsink name=sink2 
 
-  gst-launch-1.0 rtspsrc location=rtsp://192.168.0.12:5000/ latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=(string)RGBA ! videoconvert ! appsink name=sink2 \
-gst-launch-1.0 rtspsrc location=rtsp://192.168.0.12:5000/zed-stream latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=(string)RGBA ! videoconvert ! appsink name=sink2 
-
-gst-launch-1.0 rtspsrc location=rtsp://192.168.0.12:5000/zed-stream latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=(string)RGBA ! videoconvert ! appsink name=sink2 
+rtspsrc location=rtsp://192.168.0.7:5000/zed-stream latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=(string)RGBA ! videoconvert ! appsink name=sink2
 
 - 서버 파이프 라인
   - RTSP
