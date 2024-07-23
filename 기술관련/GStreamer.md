@@ -16,4 +16,4 @@ gst-zed-rtsp-launch --address=192.168.0.12 --port=5000 zedsrc !  queue max-size-
 
    gst-zed-rtsp-launch zedsrc ! videoconvert ! 'video/x-raw, format=(string)I420' ! x264enc ! rtph264pay pt=96 name=pay0
 
-gst-zed-rtsp-launch --address=192.168.0.12 --port=5000 zedsrc ! queue max-size-time=0 max-size-bytes=0 max-size-buffers=0 ! videoconvert ! 'video/x-raw, format=(string)I420' ! x264enc byte-stream=true tune=zerolatency speed-preset=ultrafast bitrate=3000 ! h264parse ! rtph264pay config-interval=-1 pt=96 name=pay0
+gst-zed-rtsp-launch --address=192.168.0.7 --port=5000 zedsrc ! queue max-size-time=0 max-size-bytes=0 max-size-buffers=0 ! videoconvert ! 'video/x-raw, format=(string)I420' x264enc byte-stream=true tune=zerolatency speed-preset=ultrafast bitrate=3000 ! h264parse ! rtph264pay config-interval=-1 pt=96 name=pay0
