@@ -6,7 +6,9 @@
 
   gst-launch-1.0 rtspsrc location=rtsp://192.168.0.12:5000/ ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! autovideosink
 
-gst-launch-1.0 rtspsrc location=rtsp://192.168.0.12:5000/ ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! autovideosink
+gst-launch-1.0 rtspsrc location=rtsp://192.168.0.12:5000/zed-stream latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=(string)RGBA ! videoconvert ! appsink name=sink2 
+
+gst-launch-1.0 rtspsrc location=rtsp://192.168.0.12:5000/zed-stream latency=0 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=(string)RGBA ! videoconvert ! appsink name=sink2 
 
 - 서버 파이프 라인
   - RTSP
@@ -25,3 +27,6 @@ gst-launch-1.0 zedsrc ! timeoverlay ! tee name=split has-chain=true ! \
  h264parse ! rtph264pay config-interval=-1 pt=96 ! queue ! \
  udpsink clients=192.168.1.169:5000 max-bitrate=3000000 sync=false async=false
 ```
+
+
+gst-zed-rtsp-launch --address=192.168.0.12 --port=5000 zedsrc ! queue max-size-time=0 max-size-bytes=0 max-size-buffers=0 ! videoconvert ! 'video/x-raw, format=(string)I420' ! x264enc byte-stream=true tune=zerolatency speed-preset=ultrafast bitrate=3000 ! h264parse ! rtph264pay config-interval=-1 pt=96 name=pay0
