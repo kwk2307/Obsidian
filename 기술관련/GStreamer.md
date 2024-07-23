@@ -5,7 +5,9 @@
     udpsrc port=5000 ! application/x-rtp,clock-rate=90000,payload=96 ! queue ! rtph264depay ! h264parse ! avdec_h264 ! queue ! videoconvert ! video/x-raw,format=(string)RGBA ! videoconvert ! appsink name=sink2 
 
   gst-launch-1.0 rtspsrc location=rtsp://192.168.0.12:5000/ ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! autovideosink
-  
+
+gst-launch-1.0 rtspsrc location=rtsp://192.168.0.12:5000/ ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! autovideosink
+
 - 서버 파이프 라인
   - RTSP
     gst-zed-rtsp-launch --address=192.168.0.12 --port=5000 zedsrc ! videoconvert ! 'video/x-raw, format=(string)I420' ! x264enc ! rtph264pay pt=96 name=pay0
