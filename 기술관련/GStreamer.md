@@ -23,5 +23,3 @@ gst-launch-1.0 rtspsrc location=rtsp://192.168.0.7/zed-stream latency=0 ! decode
 
 gst-zed-rtsp-launch --address=192.168.0.7 --port=5000 zedsrc ! queue max-size-time=0 max-size-bytes=0 max-size-buffers=0 ! videoconvert ! 'video/x-raw, format=(string)I420' x264enc byte-stream=true tune=zerolatency speed-preset=ultrafast bitrate=3000 ! h264parse ! rtph264pay config-interval=-1 pt=96 name=pay0
 
-
-h265 인코딩방식으로 하는게 더 좋을지도 모름 

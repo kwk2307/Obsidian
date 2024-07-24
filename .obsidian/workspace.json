@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/GStreamer.md",
+                "file": "ViveStudios/업무일지/2024-07-24.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/GStreamer.md",
+                "file": "ViveStudios/업무일지/2024-07-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/GStreamer.md",
+                "file": "ViveStudios/업무일지/2024-07-24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/GStreamer.md"
+                "file": "ViveStudios/업무일지/2024-07-24.md"
               }
             }
           }
@@ -149,9 +149,10 @@
   "active": "b3cfa5ecf15fc586",
   "lastOpenFiles": [
     "ViveStudios/업무일지/2024-07-23.md",
+    "ViveStudios/업무일지/2024-07-24.md",
+    "기술관련/GStreamer.md",
     "ViveStudios/업무일지/2024-07-19.md",
     "ViveStudios/업무일지/2024-07-22.md",
-    "기술관련/GStreamer.md",
     "기술관련/ZED SDK.md",
     "ViveStudios/업무일지/2024-07-18.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
@@ -183,7 +184,6 @@
     "Pasted image 20240712181531.png",
     "기술관련/Unreal/Lyra Starter Game/Modular Gameplay Plugin.md",
     "Pasted image 20240712181507.png",
-    "기술관련/Unreal/VRExpansionPlugin.md",
     "기술관련/Unreal/Lyra Starter Game/UI",
     "기술관련/Unreal/Lyra Starter Game",
     "기술관련/포인트 클라우드",
