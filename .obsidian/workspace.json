@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-25.md",
+                "file": "ViveStudios/업무일지/2024-07-29.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-25.md",
+                "file": "ViveStudios/업무일지/2024-07-29.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-25.md",
+                "file": "ViveStudios/업무일지/2024-07-29.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/2024-07-25.md"
+                "file": "ViveStudios/업무일지/2024-07-29.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "b3cfa5ecf15fc586",
   "lastOpenFiles": [
-    "ViveStudios/업무일지/2024-07-24.md",
     "ViveStudios/업무일지/2024-07-25.md",
+    "ViveStudios/업무일지/2024-07-29.md",
+    "ViveStudios/업무일지/2024-07-24.md",
     "ViveStudios/업무일지/2024-07-23.md",
     "기술관련/GStreamer.md",
     "ViveStudios/업무일지/2024-07-19.md",
@@ -176,7 +177,6 @@
     "Images/Lyra Sample/Pasted image 20240712181721.png",
     "기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
     "기술관련/Unreal/Lyra Starter Game/CommonGame.md",
-    "기술관련/Unreal/Lyra Starter Game/Asset Manager.md",
     "Pasted image 20240712181651.png",
     "Pasted image 20240712181443.png",
     "Pasted image 20240712181413.png",
