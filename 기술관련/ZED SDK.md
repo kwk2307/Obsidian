@@ -4,5 +4,7 @@
 
 - ZED SDK UE Plugin 
   - 카메라 초기화 부분
-    U
+    void USlCameraProxy::Internal_OpenCamera(const FSlInitParameters& InitParameters)
+    이 부분에서 초기화 정보를 가지고 카메라를 실행하는 API를 실행해줌
+    
 - 
