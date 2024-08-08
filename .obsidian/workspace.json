@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/8월/2024-08-05.md",
+                "file": "ViveStudios/업무일지/8월/2024-08-08.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/8월/2024-08-05.md",
+                "file": "ViveStudios/업무일지/8월/2024-08-08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/8월/2024-08-05.md",
+                "file": "ViveStudios/업무일지/8월/2024-08-08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/8월/2024-08-05.md"
+                "file": "ViveStudios/업무일지/8월/2024-08-08.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "b3cfa5ecf15fc586",
   "lastOpenFiles": [
-    "ViveStudios/업무일지/8월/2024-08-02.md",
     "ViveStudios/업무일지/8월/2024-08-05.md",
+    "ViveStudios/업무일지/8월/2024-08-02.md",
+    "ViveStudios/업무일지/8월/2024-08-08.md",
     "ViveStudios/업무일지/7월/2024-07-23.md",
     "ViveStudios/업무일지/7월/2024-07-24.md",
     "ViveStudios/업무일지/7월/2024-07-25.md",
@@ -175,7 +176,6 @@
     "기술관련/Unreal/Unreal Engine Game Flow.md",
     "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
     "기술관련/Unreal/Lyra Starter Game/GameFrameworkComponentManager.md",
-    "기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
     "Images/Lyra Sample/Pasted image 20240712181653.png",
     "Images/Lyra Sample/Pasted image 20240712181743.png",
     "Images/Lyra Sample/Pasted image 20240712181721.png",
