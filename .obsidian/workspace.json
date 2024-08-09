@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "기술관련/ZED SDK.md",
+                "file": "ViveStudios/업무일지/8월/2024-08-08.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "기술관련/ZED SDK.md",
+                "file": "ViveStudios/업무일지/8월/2024-08-08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "기술관련/ZED SDK.md",
+                "file": "ViveStudios/업무일지/8월/2024-08-08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "기술관련/ZED SDK.md"
+                "file": "ViveStudios/업무일지/8월/2024-08-08.md"
               }
             }
           }
@@ -148,34 +148,34 @@
   },
   "active": "b3cfa5ecf15fc586",
   "lastOpenFiles": [
-    "ViveStudios/업무일지/8월/2024-08-08.md",
-    "ViveStudios/업무일지/8월/2024-08-05.md",
-    "ViveStudios/업무일지/8월/2024-08-02.md",
     "ViveStudios/업무일지/7월/2024-07-23.md",
+    "ViveStudios/업무일지/7월/2024-07-22.md",
     "ViveStudios/업무일지/7월/2024-07-24.md",
     "ViveStudios/업무일지/7월/2024-07-25.md",
+    "ViveStudios/업무일지/프로젝트/KAI POS2.md",
+    "LyraPawnData.md",
+    "LyraExerpienceActionSet.md",
+    "ViveStudios/업무일지/7월/2024-07-08.md",
+    "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
+    "기술관련/Unreal/Unreal Engine Game Flow.md",
+    "기술관련/Unreal/VRExpansionPlugin.md",
+    "기술관련/ZED SDK.md",
+    "기술관련/GStreamer.md",
+    "ViveStudios/업무일지/7월/2024-07-10.md",
+    "ViveStudios/업무일지/7월/2024-07-11.md",
+    "ViveStudios/업무일지/7월/2024-07-12.md",
+    "ViveStudios/업무일지/7월/2024-07-15.md",
+    "ViveStudios/업무일지/7월/2024-07-16.md",
+    "ViveStudios/업무일지/7월/2024-07-17.md",
+    "ViveStudios/업무일지/7월/2024-07-18.md",
+    "ViveStudios/업무일지/7월/2024-07-19.md",
     "ViveStudios/업무일지/7월/2024-07-29.md",
+    "ViveStudios/업무일지/8월/2024-08-05.md",
+    "ViveStudios/업무일지/8월/2024-08-08.md",
+    "ViveStudios/업무일지/8월/2024-08-02.md",
+    "ViveStudios/업무일지/7월/2024-07-09.md",
     "ViveStudios/업무일지/8월",
     "ViveStudios/업무일지/7월",
-    "ViveStudios/업무일지/7월/2024-07-08.md",
-    "ViveStudios/업무일지/7월/2024-07-15.md",
-    "ViveStudios/업무일지/7월/2024-07-12.md",
-    "ViveStudios/업무일지/7월/2024-07-11.md",
-    "ViveStudios/업무일지/7월/2024-07-10.md",
-    "ViveStudios/업무일지/7월/2024-07-09.md",
-    "기술관련/GStreamer.md",
-    "ViveStudios/업무일지/7월/2024-07-19.md",
-    "ViveStudios/업무일지/7월/2024-07-22.md",
-    "기술관련/ZED SDK.md",
-    "ViveStudios/업무일지/7월/2024-07-18.md",
-    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
-    "ViveStudios/업무일지/7월/2024-07-17.md",
-    "ViveStudios/업무일지/7월/2024-07-16.md",
-    "기술관련/Unreal/Lyra Starter Game/CommonUI.md",
-    "기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
-    "기술관련/Unreal/Unreal Engine Game Flow.md",
-    "기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
-    "기술관련/Unreal/Lyra Starter Game/GameFrameworkComponentManager.md",
     "Images/Lyra Sample/Pasted image 20240712181653.png",
     "Images/Lyra Sample/Pasted image 20240712181743.png",
     "Images/Lyra Sample/Pasted image 20240712181721.png",
