@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/프로젝트/KAI POS2.md",
+                "file": "ViveStudios/업무일지/8월/2024-08-14.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f5639d9660642dfe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ViveStudios/업무일지/8월/2024-08-15.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/프로젝트/KAI POS2.md",
+                "file": "ViveStudios/업무일지/8월/2024-08-15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/프로젝트/KAI POS2.md",
+                "file": "ViveStudios/업무일지/8월/2024-08-15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/프로젝트/KAI POS2.md"
+                "file": "ViveStudios/업무일지/8월/2024-08-15.md"
               }
             }
           }
@@ -146,11 +159,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b3cfa5ecf15fc586",
+  "active": "f5639d9660642dfe",
   "lastOpenFiles": [
-    "2024-08-14.md",
-    "ViveStudios/업무일지/프로젝트/KAI POS2.md",
+    "Untitled.md",
+    "ViveStudios/업무일지/8월/2024-08-15.md",
+    "LyraPawnData.md",
     "ViveStudios/업무일지/8월/2024-08-14.md",
+    "기술관련/Unreal/EnhanceInput.md",
+    "기술관련/ZED SDK.md",
+    "ViveStudios/업무일지/프로젝트/KAI POS2.md",
+    "2024-08-14.md",
     "ViveStudios/업무일지/8월/2024-08-13.md",
     "ViveStudios/업무일지/8월/2024-08-12.md",
     "ViveStudios/업무일지/8월/2024-08-09.md",
@@ -159,21 +177,16 @@
     "ViveStudios/업무일지/7월/2024-07-22.md",
     "ViveStudios/업무일지/7월/2024-07-24.md",
     "ViveStudios/업무일지/7월/2024-07-25.md",
-    "LyraPawnData.md",
     "LyraExerpienceActionSet.md",
     "ViveStudios/업무일지/7월/2024-07-08.md",
     "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
     "기술관련/Unreal/Unreal Engine Game Flow.md",
     "기술관련/Unreal/VRExpansionPlugin.md",
-    "기술관련/ZED SDK.md",
     "기술관련/GStreamer.md",
     "ViveStudios/업무일지/7월/2024-07-10.md",
     "ViveStudios/업무일지/7월/2024-07-11.md",
     "ViveStudios/업무일지/7월/2024-07-12.md",
     "ViveStudios/업무일지/7월/2024-07-15.md",
-    "ViveStudios/업무일지/7월/2024-07-16.md",
-    "ViveStudios/업무일지/7월/2024-07-17.md",
-    "ViveStudios/업무일지/7월/2024-07-18.md",
     "ViveStudios/업무일지/8월",
     "ViveStudios/업무일지/7월",
     "Images/Lyra Sample/Pasted image 20240712181653.png",
