@@ -1,0 +1,4 @@
+- Create Widget 등으로 생성된 UI 는 PlayerController에 의해 관리된다.
+- Remove from Parent / Clear Children에 의해 화면에서 보이지 않게 된 UI 일지라도 참조가 남아있다면 메모리에는 여전히 존재한다. 참조가 없어진다면 GC에 의해 삭제된다. 
+- [[Image Widget]]
+- 

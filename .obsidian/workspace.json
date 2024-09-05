@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "482d4edf119a0310",
+        "id": "0f0fd93bf454d908",
         "type": "tabs",
         "children": [
           {
-            "id": "b3cfa5ecf15fc586",
+            "id": "4fa519b0d917de98",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/8월/2024-08-14.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f5639d9660642dfe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ViveStudios/업무일지/8월/2024-08-15.md",
+                "file": "ViveStudios/업무일지/9월/2024-09-05.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/8월/2024-08-15.md",
+                "file": "ViveStudios/업무일지/9월/2024-09-05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/8월/2024-08-15.md",
+                "file": "ViveStudios/업무일지/9월/2024-09-05.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/8월/2024-08-15.md"
+                "file": "ViveStudios/업무일지/9월/2024-09-05.md"
               }
             }
           }
@@ -159,34 +146,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f5639d9660642dfe",
+  "active": "4fa519b0d917de98",
   "lastOpenFiles": [
-    "Untitled.md",
-    "ViveStudios/업무일지/8월/2024-08-15.md",
-    "LyraPawnData.md",
-    "ViveStudios/업무일지/8월/2024-08-14.md",
-    "기술관련/Unreal/EnhanceInput.md",
-    "기술관련/ZED SDK.md",
-    "ViveStudios/업무일지/프로젝트/KAI POS2.md",
-    "2024-08-14.md",
-    "ViveStudios/업무일지/8월/2024-08-13.md",
-    "ViveStudios/업무일지/8월/2024-08-12.md",
+    "ViveStudios/업무일지/9월/2024-09-04.md",
+    "ViveStudios/업무일지/9월/2024-09-05.md",
+    "ViveStudios/업무일지/9월/2024-09-03.md",
+    "ViveStudios/업무일지/9월/2024-09-02.md",
+    "ViveStudios/업무일지/8월/2024-08-30.md",
+    "ViveStudios/업무일지/9월",
+    "ViveStudios/업무일지/8월/Untitled",
+    "1. 기술관련/Unreal/Unreal Multiplay System.md",
+    "Untitled",
+    "ViveStudios/업무일지/8월/2024-08-29.md",
+    "ViveStudios/업무일지/8월/2024-08-28.md",
+    "ViveStudios/업무일지/8월/2024-08-22.md",
+    "99. 기타등등/청년 전용 버팀목 전세 자금 대출.md",
+    "Untitled.canvas",
+    "Image Widget.md",
+    "1. 기술관련/Unreal/UMG.md",
+    "ViveStudios/업무일지/8월/2024-08-27.md",
     "ViveStudios/업무일지/8월/2024-08-09.md",
-    "ViveStudios/업무일지/8월/2024-08-08.md",
-    "ViveStudios/업무일지/7월/2024-07-23.md",
-    "ViveStudios/업무일지/7월/2024-07-22.md",
-    "ViveStudios/업무일지/7월/2024-07-24.md",
-    "ViveStudios/업무일지/7월/2024-07-25.md",
-    "LyraExerpienceActionSet.md",
-    "ViveStudios/업무일지/7월/2024-07-08.md",
-    "기술관련/Unreal/Lyra Starter Game/UIExtension.md",
-    "기술관련/Unreal/Unreal Engine Game Flow.md",
-    "기술관련/Unreal/VRExpansionPlugin.md",
-    "기술관련/GStreamer.md",
-    "ViveStudios/업무일지/7월/2024-07-10.md",
-    "ViveStudios/업무일지/7월/2024-07-11.md",
-    "ViveStudios/업무일지/7월/2024-07-12.md",
-    "ViveStudios/업무일지/7월/2024-07-15.md",
+    "Images/Pasted image 20240827153141.png",
+    "ViveStudios/업무일지/8월/2024-08-26.md",
+    "LyraPawnData.md",
+    "Images/Pasted image 20240827153202.png",
+    "1. 기술관련/포인트 클라우드/Open3D.md",
+    "1. 기술관련/GStreamer.md",
+    "1. 기술관련/ZED SDK.md",
+    "99. 기타등등",
+    "ViveStudios/업무일지/8월/2024-08-21.md",
+    "ViveStudios/업무일지/8월/2024-08-20.md",
+    "ViveStudios/업무일지/8월/2024-08-19.md",
+    "ViveStudios/업무일지/8월/2024-08-16.md",
+    "Untitled.md",
+    "ViveStudios/업무일지/8월/2024-08-14.md",
+    "1. 기술관련/Unreal/EnhanceInput.md",
     "ViveStudios/업무일지/8월",
     "ViveStudios/업무일지/7월",
     "Images/Lyra Sample/Pasted image 20240712181653.png",
@@ -197,15 +191,9 @@
     "Pasted image 20240712181413.png",
     "Pasted image 20240712181556.png",
     "Pasted image 20240712181552.png",
-    "Pasted image 20240712181531.png",
-    "Pasted image 20240712181507.png",
     "기술관련/Unreal/Lyra Starter Game/UI",
-    "기술관련/Unreal/Lyra Starter Game",
-    "기술관련/포인트 클라우드",
-    "기술관련/Unreal",
-    "Images/Lyra Sample",
-    "Images",
-    "기술관련",
-    "ViveStudios/업무일지/프로젝트"
+    "1. 기술관련/Unreal/Lyra Starter Game",
+    "1. 기술관련/포인트 클라우드",
+    "1. 기술관련/Unreal"
   ]
 }
