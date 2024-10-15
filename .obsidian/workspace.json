@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ViveStudios/업무일지/9월/2024-09-25.md",
+                "file": "2024-10-16.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ViveStudios/업무일지/9월/2024-09-25.md",
+                "file": "2024-10-16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ViveStudios/업무일지/9월/2024-09-25.md",
+                "file": "2024-10-16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ViveStudios/업무일지/9월/2024-09-25.md"
+                "file": "2024-10-16.md"
               }
             }
           }
@@ -146,13 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6b156b7346e0692",
+  "active": "4fa519b0d917de98",
   "lastOpenFiles": [
-    "ViveStudios/업무일지/9월/2024-09-23.md",
-    "ViveStudios/업무일지/9월/2024-09-25.md",
-    "ViveStudios/업무일지/9월/2024-09-20.md",
+    "ViveStudios/업무일지/10월/2024-10-14.md",
+    "2024-10-16.md",
     "ViveStudios/업무일지/9월/2024-09-12.md",
     "ViveStudios/업무일지/9월/2024-09-19.md",
+    "ViveStudios/업무일지/9월/2024-09-20.md",
+    "ViveStudios/업무일지/9월/2024-09-23.md",
+    "ViveStudios/업무일지/9월/2024-09-25.md",
+    "ViveStudios/업무일지/10월/2024-10-07.md",
+    "ViveStudios/업무일지/10월/2024-10-02.md",
+    "ViveStudios/업무일지/9월/2024-09-30.md",
+    "1. 기술관련/GStreamer.md",
+    "ViveStudios/업무일지/10월",
     "ViveStudios/업무일지/9월/2024-09-08.md",
     "ViveStudios/업무일지/9월/2024-09-05.md",
     "ViveStudios/업무일지/8월/2024-08-29.md",
@@ -172,14 +179,8 @@
     "Untitled.canvas",
     "Image Widget.md",
     "1. 기술관련/Unreal/UMG.md",
-    "ViveStudios/업무일지/8월/2024-08-27.md",
     "Images/Pasted image 20240827153141.png",
-    "ViveStudios/업무일지/8월/2024-08-26.md",
-    "LyraPawnData.md",
     "Images/Pasted image 20240827153202.png",
-    "1. 기술관련/포인트 클라우드/Open3D.md",
-    "1. 기술관련/GStreamer.md",
-    "1. 기술관련/ZED SDK.md",
     "99. 기타등등",
     "ViveStudios/업무일지/8월",
     "ViveStudios/업무일지/7월",
@@ -193,7 +194,6 @@
     "Pasted image 20240712181552.png",
     "기술관련/Unreal/Lyra Starter Game/UI",
     "1. 기술관련/Unreal/Lyra Starter Game",
-    "1. 기술관련/포인트 클라우드",
-    "1. 기술관련/Unreal"
+    "1. 기술관련/포인트 클라우드"
   ]
 }
