@@ -8,33 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4fa519b0d917de98",
+            "id": "a9c6d085ef33871f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-10-16.md",
+                "file": "ViveStudios/업무일지/11월/2024-11-04.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-16"
-            }
-          },
-          {
-            "id": "a9c6d085ef33871f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.4"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
+              "title": "2024-11-04"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,8 +164,14 @@
   },
   "active": "a9c6d085ef33871f",
   "lastOpenFiles": [
+    "1. 기술관련/Unreal/Pak.md",
+    "ViveStudios/업무일지/11월/2024-11-04.md",
+    "ViveStudios/업무일지/11월",
+    "Image Widget.md",
+    "1. 기술관련/Unreal/UMG.md",
+    "1. 기술관련/Unreal/Unreal Engine Game Flow.md",
     "ViveStudios/업무일지/10월/2024-10-14.md",
-    "2024-10-16.md",
+    "ViveStudios/업무일지/10월/2024-10-16.md",
     "ViveStudios/업무일지/9월/2024-09-12.md",
     "ViveStudios/업무일지/9월/2024-09-19.md",
     "ViveStudios/업무일지/9월/2024-09-20.md",
@@ -202,12 +195,7 @@
     "ViveStudios/업무일지/8월/Untitled",
     "1. 기술관련/Unreal/Unreal Multiplay System.md",
     "Untitled",
-    "ViveStudios/업무일지/8월/2024-08-28.md",
-    "ViveStudios/업무일지/8월/2024-08-22.md",
-    "99. 기타등등/청년 전용 버팀목 전세 자금 대출.md",
     "Untitled.canvas",
-    "Image Widget.md",
-    "1. 기술관련/Unreal/UMG.md",
     "Images/Pasted image 20240827153141.png",
     "Images/Pasted image 20240827153202.png",
     "99. 기타등등",
@@ -222,7 +210,6 @@
     "Pasted image 20240712181556.png",
     "Pasted image 20240712181552.png",
     "기술관련/Unreal/Lyra Starter Game/UI",
-    "1. 기술관련/Unreal/Lyra Starter Game",
-    "1. 기술관련/포인트 클라우드"
+    "1. 기술관련/Unreal/Lyra Starter Game"
   ]
 }
