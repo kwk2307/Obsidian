@@ -27,13 +27,29 @@
 
 **블루프린트 예제**
 
-서버 - 세션 생성
+- 서버/클라이언트 구조 구축 
+	**서버 - 세션 생성**
 ![[Pasted image 20241230152316.png]]
-
-클라이언트 - 세션 검색
+	**클라이언트-세션 검색**
 ![[Pasted image 20241230152544.png]]
-클라이언트 - 세션 참가 
+	**클라이언트 - 세션 참가 
 ![[Pasted image 20241230152618.png]]
-
-**코드 예제**
-
+- 리플리케이션을 통한 데이터 동기화
+	**PlayerController 정보 Replication** 관련 블루프린트 
+![[Pasted image 20241230163049.png]]
+	Color 변수의 디테일 화면. 리플리케이션 설정을 해줘야 한다. 
+![[Pasted image 20241230163702.png]]
+	**주의 사항**: 리플리케이션은 **서버에서만** 발생한다. 클라이언트의 변수를 리플리케이션 하려면 다른 방식을 사용해야 한다. 
+	
+-  RPC(Remote Procedure Calls) 사용.
+	**화면 공유 요청** 관련 블루프린트 
+![[Pasted image 20241230155311.png]]
+	1. IETMWindowShareEvent : 클라이언트/서버에서 "화면공유" 버튼을 선택했을 시 발생하는 이벤트 Control_ShareEvent_ROS 이벤트를 발생 시킨다. 
+	2. Control_ShareEvent_ROS : 서버에서만 실행되는 RPC Control_ShareEvent_MTC 이벤트를 발생시킨다. 
+	   **주의 사항**: RunOnServer RPC의 경우 PlayerController가 **소유한 액터에서만 발생시킬** 수 있다.
+	   위 경우 
+	   1. Pawn의 Component 임 
+	   2. Pawn은 PlayerContoller가 Pose 하고 있음
+	   3. PlayerController가 Pawn을 소유하고 있음 
+	   위와 같은 이유로 발생시킬 수 있다.
+	3. Control_ShareEvent_MTC : 클라이언트/서버에 모두 발생하는 이벤트 팝업을 생성함
