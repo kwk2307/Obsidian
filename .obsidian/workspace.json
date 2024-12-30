@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f311fe99746736a4",
+            "id": "6e379d11d8e058f6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ViveStudios/업무일지/프로젝트/KAI POC2 기술 문서.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "KAI POC2 기술 문서"
             }
           }
         ]
@@ -89,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-10-16.md",
+                "file": "2024-11-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2024-10-16"
+              "title": "Backlinks for 2024-11-22"
             }
           },
           {
@@ -158,53 +162,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f311fe99746736a4",
+  "active": "6e379d11d8e058f6",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Pasted image 20241230152618.png",
+    "ViveStudios/업무일지/프로젝트/KAI POC2 기술 문서 이미지/Pasted image 20241230152544.png",
+    "ViveStudios/업무일지/프로젝트/KAI POC2 기술 문서 이미지",
+    "ViveStudios/업무일지/프로젝트/KAI POC2 기술 문서 이미지/Pasted image 20241230152316.png",
+    "1. 기술관련/Unreal/Unreal Engine Networking and Multiplayer.md",
+    "ViveStudios/업무일지/프로젝트/KAI POC2 기술 문서.md",
+    "ViveStudios/업무일지/프로젝트/KAI POC1.md",
+    "Unreal Engine Replicatie System.md",
+    "Image Widget.md",
+    "DirectX3D.md",
+    "LyraExerpienceActionSet.md",
+    "LyraPawnData.md",
+    "1. 기술관련/ZED SDK.md",
+    "1. 기술관련/GStreamer.md",
+    "1. 기술관련/Unreal/VRExpansionPlugin.md",
+    "1. 기술관련/Unreal/EnhanceInput.md",
+    "1. 기술관련/Unreal/Pak.md",
+    "1. 기술관련/Unreal/Lyra Starter Game/UIExtension.md",
+    "1. 기술관련/Unreal/Lyra Starter Game/Modular Gameplay Plugin.md",
+    "1. 기술관련/Unreal/Lyra Starter Game/LyraExperienceDefinition.md",
+    "1. 기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 활용.md",
+    "1. 기술관련/Unreal/Lyra Starter Game/Lyra Starter Game 실행 흐름.md",
+    "1. 기술관련/Unreal/Lyra Starter Game/Lyra Character.md",
+    "1. 기술관련/Unreal/Lyra Starter Game/GameFeatures.md",
+    "1. 기술관련/Unreal/Lyra Starter Game/CommonUI.md",
+    "1. 기술관련/Unreal/Lyra Starter Game/CommonLoadingScene.md",
+    "ViveStudios/업무일지/프로젝트/KAI POC1/Untitled.md",
+    "ViveStudios/업무일지/12월/2024-12-12.md",
+    "ViveStudios/업무일지/프로젝트/KAI POC1",
+    "ViveStudios/업무일지/12월/2024-12-09.md",
+    "ViveStudios/업무일지/12월",
     "Untitled.canvas",
     "Images/Pasted image 20241112104442.png",
-    "ViveStudios/업무일지/11월/2024-11-17.md",
-    "DirectX3D.md",
-    "ViveStudios/업무일지/11월/2024-11-12.md",
-    "2024-11-12.md",
     "Images/Pasted image 20241112105423.png",
-    "ViveStudios/업무일지/11월/2024-11-11.md",
     "Images/Pasted image 20241112104705.png",
     "Images/Pasted image 20241112104600.png",
     "Images/Pasted image 20241112104548.png",
-    "ViveStudios/업무일지/11월/2024-11-05.md",
-    "ViveStudios/업무일지/11월/2024-11-04.md",
-    "1. 기술관련/Unreal/Pak.md",
     "ViveStudios/업무일지/11월",
-    "Image Widget.md",
-    "1. 기술관련/Unreal/UMG.md",
-    "1. 기술관련/Unreal/Unreal Engine Game Flow.md",
-    "ViveStudios/업무일지/10월/2024-10-14.md",
-    "ViveStudios/업무일지/10월/2024-10-16.md",
-    "ViveStudios/업무일지/9월/2024-09-12.md",
-    "ViveStudios/업무일지/9월/2024-09-19.md",
-    "ViveStudios/업무일지/9월/2024-09-20.md",
-    "ViveStudios/업무일지/9월/2024-09-23.md",
-    "ViveStudios/업무일지/9월/2024-09-25.md",
-    "ViveStudios/업무일지/10월/2024-10-07.md",
-    "ViveStudios/업무일지/10월/2024-10-02.md",
-    "ViveStudios/업무일지/9월/2024-09-30.md",
-    "1. 기술관련/GStreamer.md",
     "ViveStudios/업무일지/10월",
-    "ViveStudios/업무일지/9월/2024-09-08.md",
-    "ViveStudios/업무일지/9월/2024-09-05.md",
     "ViveStudios/업무일지/9월",
     "ViveStudios/업무일지/8월/Untitled",
-    "Untitled",
     "Images/Pasted image 20240827153141.png",
     "Images/Pasted image 20240827153202.png",
     "99. 기타등등",
     "ViveStudios/업무일지/8월",
     "ViveStudios/업무일지/7월",
-    "Images/Lyra Sample/Pasted image 20240712181653.png",
-    "Images/Lyra Sample/Pasted image 20240712181743.png",
-    "Images/Lyra Sample/Pasted image 20240712181721.png",
-    "기술관련/Unreal/Lyra Starter Game/UI",
-    "1. 기술관련/Unreal/Lyra Starter Game"
+    "Images/Lyra Sample/Pasted image 20240712181653.png"
   ]
 }
